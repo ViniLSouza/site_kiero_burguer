@@ -1,0 +1,16 @@
+
+.cadastro{
+    width: 600px;
+    height: 550px;
+    background-color: rgb(76, 122, 46);
+    margin: 100px 450px 100px 450px;
+    padding-top: 60px;
+    display: flex;
+}
+.formulariocadastro{
+    width: 600px;
+    height: 550px;
+    background-color: rgb(226, 234, 234);
+    
+    display:list-item
+}
