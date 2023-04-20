@@ -1,16 +1,25 @@
-
+.body{
+    background-image:url(_imagens/fundo_2.jpg);
+    background-repeat: repeat;
+}
 .cadastro{
-    width: 600px;
-    height: 550px;
-    background-color: rgb(76, 122, 46);
-    margin: 100px 450px 100px 450px;
-    padding-top: 60px;
+    width: 1000px;
+    height: 500px;
     display: flex;
+}
+.boxlado{
+    width: 400px;
+    height: 500px;
+    float: left;
 }
 .formulariocadastro{
     width: 600px;
-    height: 550px;
-    background-color: rgb(226, 234, 234);
+    height: 400px;
+    background-color: #f3db9a;
+    display: block;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;
     
-    display:list-item
+    
 }
