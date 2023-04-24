@@ -5,25 +5,32 @@
 }
 
 body{
-    background: url(./_imagens/fundo_2.jpg);
+    background-image: url(../_imagens/fundo_2.jpg);
+    background-size: 200px;
     font-family: var(--font-principal), sans-serif; 
 }
 
 .cadastro{
-    width: 1000px;
-    height: 500px;
+    width: 60%;
+    height: fit-content;
     display: flex;
-    margin-left: 25%;  
+    margin:auto; 
+    background-color: aquamarine;
 }
 
 .boxlado{
-    width: 400px;
-    height: 500px;
+    width: fit-content;
+    height: auto;
+}
+
+.imagemlado{
+    width: 90%;
+    height: auto;
 }
 
 .formulariocadastro{
-    width: 600px;
-    height: 400px;
+    width: auto;
+    height: auto;
     background-color: #f3db9a;
     padding: 50px;
     text-align: center;
