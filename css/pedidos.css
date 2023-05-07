@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif ;
+}
+
+:root{
+    --verde-escuro: #5b7723;
+    --verde-claro: #708534;
+    --backgroud: #f3db9a;
+}
+
+.corpo{
+    background-color: var(--verde-claro);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main-pedidos{
+    width: 80%;
+    background-color: var(--backgroud);
+    padding: 8em;
+}
+
+.titulo-pedidos{
+    text-align: center;
+    font-size: 28px;
+    display: flex;
+    font-weight: 400;
+    color: var(--verde-claro);
+    margin-bottom: 1em;
+}
+/*Inicio do andamento do pedido*/
+.numero-pedidos{
+    padding: 1em;
+    border: 2px solid var(--verde-escuro);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.primeira-informacao{
+    display: flex;
+}
+
+.texto-pedido{
+    padding-right: 2em;
+    
+}
+
+.procedimento{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 2em 2em 0 2em;
+}
+
+.processo{
+    color: var(--verde-claro);
+}
