@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto';
+}
+
+:root {
+    --verde-escuro: #5b7723;
+    --verde-claro: #708534;
+    --verde-mais-claro: #9ca156;
+}
+
+/* Header */
+
+header {
+    background-color: #5b7723;
+    top: 0;
+    position: sticky;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    width: 100%;
+    height: 5em;
+    align-items: center;
+    padding: 0 2em
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav {
+text-align: center;
+}
+
+.lista {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.lista_nav {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+    color: #f3db9a;
+}
+
+.lista_nav:hover {
+    color: #869345;
+}
+
+.login {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #f3db9a;
+    color: var(--verde-escuro);
+    border-radius: 0 5px;
+    border: 0;
+    margin: 0 auto;
+}
+
+.login:hover {
+    background-color: var(--verde-claro);
+    color:  #f3db9a;
+}
+
+.login:active {
+    background-color: var(--verde-mais-claro);
+}
