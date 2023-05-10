@@ -14,12 +14,8 @@
 
 }
 
-
-
 .corpo{
     background-color: var(--verde-claro);
-    display: flex;
-    justify-content: center;
     
 }
 
@@ -27,6 +23,8 @@
     width: 80%;
     background-color: var(--backgroud);
     padding: 8em;
+    display: block;
+    margin: 0 auto;
 }
 
 .titulo-pedidos{
