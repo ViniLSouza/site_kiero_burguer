@@ -6,16 +6,10 @@
     font-family:'Roboto';
 }
 
-:root {
-    --verde-escuro: #5b7723;
-    --verde-claro: #708534;
-    --verde-mais-claro: #9ca156;
-}
-
 /* Header */
 
 header {
-    background-color: #5b7723;
+    background-color: #003049;
     top: 0;
     position: sticky;
     display: grid;
@@ -40,14 +34,13 @@ text-align: center;
 }
 
 .lista_nav {
-    color: var(--white);
     text-decoration: none;
     font-size: 20px;
-    color: #f3db9a;
+    color: #f77f00;
 }
 
 .lista_nav:hover {
-    color: #869345;
+    color: #FCBF49;
 }
 
 .botaoLogin {
@@ -59,18 +52,18 @@ text-align: center;
     width: 100px;
     height: 40px;
     font-size: 20px;
-    background-color: #f3db9a;
-    color: var(--verde-escuro);
+    background-color: #d62828;
+    color: #FFFFFF;
     border-radius: 0 10px;
     border: 0;
     margin: 0 auto;
 }
 
 .login:hover {
-    background-color: var(--verde-claro);
-    color:  #f3db9a;
+    background-color: #F77F00;
+    color:  #EAE2B7;
 }
 
 .login:active {
-    background-color: var(--verde-mais-claro);
+    background-color: #FCBF49;
 }
