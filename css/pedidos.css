@@ -6,23 +6,23 @@
 }
 
 :root{
-    --verde-escuro: #5b7723;
-    --verde-claro: #708534;
-    --verde-mais-claro: #9ca156;
+    --cor-escuro: #D62828;
+    --cor-claro: #F77F00;
+    --cor-mais-claro: #FCBF49;
     --branco: #fff;
-    --backgroud: #f3db9a;
+    --backgroud: #EAE2B7;
 
 }
 
 .corpo{
-    background-color: var(--verde-claro);
+    background-color: var(--cor-claro);
     
 }
 
 .main-pedidos{
     width: 80%;
     background-color: var(--backgroud);
-    padding: 8em;
+    padding: 6vw;
     display: block;
     margin: 0 auto;
 }
@@ -32,13 +32,13 @@
     font-size: 28px;
     display: flex;
     font-weight: 400;
-    color: var(--verde-claro);
-    margin-bottom: 1em;
+    color: var(--cor-claro);
+    margin-bottom: 1vh;
 }
 /*Inicio do andamento do pedido*/
 .numero-pedidos{
     padding: 1em;
-    border: 2px solid var(--verde-escuro);
+    border: 2px solid var(--cor-escuro);
     border-radius: 10px;
     font-weight: 700;
     font-size: 22px;
@@ -49,7 +49,7 @@
 }
 
 .texto-pedido{
-    padding-right: 2em;
+    padding-right: 2rem;
     
 }
 
@@ -58,11 +58,11 @@
     list-style: none;
     justify-content: center;
     justify-content: space-around;
-    padding: 2em 2em 0 2em;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .processo{
-    color: var(--verde-claro);
+    color: var(--cor-claro);
 }
 
 .distancia{
@@ -77,29 +77,29 @@
 }
 
 .bolinha{
-    background-color: var(--verde-claro);
+    background-color: var(--cor-claro);
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
 
 .barra{
-    background-color: var(--verde-claro);
+    background-color: var(--cor-claro);
     width: 250px;
     height: 8px;
 }
 
 .barra-claro{
-    background-color: var(--verde-mais-claro); 
+    background-color: var(--cor-mais-claro); 
     width: 250px;
     height: 4px;
 }
 
 .bolinha-claro{
-    background-color: var(--verde-mais-claro);
+    background-color: var(--cor-mais-claro);
     width: 14px;
     height: 14px;
-    border: 4px solid var(--verde-claro);
+    border: 4px solid var(--cor-claro);
 }
 /*detalhes dos pedidos*/
 .detalhes-pedidos{
@@ -108,12 +108,12 @@
 }
 
 .adicionais-pedido{
-    color: var(--verde-mais-claro);
+    color: var(--cor-mais-claro);
     font-weight: 500;
 }
 
 .itens-adicionados{
-    color: var(--verde-mais-claro);
+    color: var(--cor-mais-claro);
     font-weight: 500;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .estilo-barrinha{
-    background-color: var(--verde-mais-claro);
+    background-color: var(--cor-mais-claro);
     width: 30rem;
     height: 2px;
     margin: 1rem 0;
@@ -168,7 +168,7 @@
 .refazer-pedido{
     border: 0;
     font-size: 1.5rem;
-    background-color: var(--verde-escuro);
+    background-color: var(--cor-escuro);
     color: var(--branco);
     border-radius: 5px;
     padding: 0.5em 1em;
@@ -176,10 +176,10 @@
 }
 
 .refazer-pedido:hover{
-    background-color: var(--verde-claro);
+    background-color: var(--cor-claro);
 }
 
 .refazer-pedido:active{
-    background-color: var(--verde-mais-claro);
+    background-color: var(--cor-mais-claro);
     color: rgb(75, 74, 74);
 }
