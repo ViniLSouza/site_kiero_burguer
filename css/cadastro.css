@@ -25,7 +25,7 @@ body{
     width: 50%;
     height: auto;
     overflow: hidden;
-    background-color: #9ca156;
+    background-color: #003049;
     text-align: left;
     font-size: x-large;
     padding: 10px 30px;
@@ -37,7 +37,7 @@ body{
     height: auto;
     overflow: hidden;
     font-size: xx-large;
-    color: #5b7723;
+    color: #F77F00;
     font-weight: 600;
     margin: auto;
     margin-bottom: 5px;
@@ -51,13 +51,13 @@ body{
 input{
     font-size: medium;
     text-align: center;
-    border: solid 3px #5b7723;
+    border: solid 3px #F77F00;
     border-radius: 5px;
     margin-bottom: 1%;
 }
 .s{
     font-size: medium;
-    color: #5b7723;
+    color: #f3db9a;
     font-weight: 600;
 
 }
