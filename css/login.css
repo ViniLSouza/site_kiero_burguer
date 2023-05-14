@@ -1,5 +1,5 @@
 body {
-    background-color: yellow;
+    background-color: #F77F00;
     font-family: Arial, sans-serif;
     font-family: var(--font-principal), sans-serif; 
     background-image: url(../_imagens/restaurante.jpg);
@@ -11,7 +11,7 @@ body {
     width: 30%;
     margin: 0% auto;
     margin-top: 00px;
-    background-color: white;
+    background-color: #f3db9a;
     padding: 20px;
     border-radius: 500px;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
