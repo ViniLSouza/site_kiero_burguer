@@ -47,7 +47,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: darkgreen;
 }
-input[type="button"] {
+.botaocadastro {
     width: 50%;
     padding: 10px;
     background-color: green;
@@ -56,6 +56,6 @@ input[type="button"] {
     border-radius: 5px;
     cursor: pointer;    
 }
-input[type="button"]:hover {
+.botaocadastro:hover {
     background-color: darkgreen;
 }
