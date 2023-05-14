@@ -61,6 +61,12 @@ input{
     font-weight: 600;
 
 }
+.button1, .button2{
+    width: 15%;
+    padding: 1%;
+    border: none;
+    background-color: #d62828;
+}
 .imagembox{
     width: 50%;
     height: auto;
