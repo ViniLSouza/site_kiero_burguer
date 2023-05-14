@@ -108,12 +108,12 @@
 }
 
 .adicionais-pedido{
-    color: var(--cor-mais-claro);
+    color: var(--cor-claro);
     font-weight: 500;
 }
 
 .itens-adicionados{
-    color: var(--cor-mais-claro);
+    color: var(--cor-claro);
     font-weight: 500;
 }
 

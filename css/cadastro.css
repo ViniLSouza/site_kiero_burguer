@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap%27');
 :root{
-    --font-principal: 'Roboto';    
+    --font-principal: 'Roboto';
+    --cor-principal: #003049;
+    --cor-escuro: #D62828;
+    --cor-claro: #F77F00;
+    --cor-mais-claro: #FCBF49;
+    --branco: #fff;
+    --backgroud: #EAE2B7;    
 }
 *{
     margin: 0;
@@ -25,7 +31,7 @@ body{
     width: 50%;
     height: auto;
     overflow: hidden;
-    background-color: #003049;
+    background-color: var(--cor-principal);
     text-align: left;
     font-size: x-large;
     padding: 10px 30px;
@@ -37,7 +43,7 @@ body{
     height: auto;
     overflow: hidden;
     font-size: xx-large;
-    color: #F77F00;
+    color: var(--cor-claro);
     font-weight: 600;
     margin: auto;
     margin-bottom: 5px;
@@ -45,19 +51,19 @@ body{
 .perguntas{
     width: 20%;
     font-size: medium;
-    color: #f3db9a;
+    color: var(--backgroud);
     margin-bottom: 1%;
 }
 input{
     font-size: medium;
     text-align: center;
-    border: solid 3px #F77F00;
+    border: solid 3px var(--cor-claro);
     border-radius: 5px;
     margin-bottom: 1%;
 }
 .s{
     font-size: medium;
-    color: #f3db9a;
+    color: var(--backgroud);
     font-weight: 600;
 
 }
@@ -65,7 +71,12 @@ input{
     width: 15%;
     padding: 1%;
     border: none;
-    background-color: #d62828;
+    background-color: var(--cor-escuro);
+    color: var(--branco);
+}
+
+.button1:hover, .button2:hover{
+    background-color: var(--cor-claro);
 }
 .imagembox{
     width: 50%;

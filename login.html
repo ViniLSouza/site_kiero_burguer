@@ -1,4 +1,4 @@
-g<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -7,23 +7,33 @@ g<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/login.css">
     <link rel="stylesheet" href="Untitled-1.css">
-    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/header.css">
+    <title>Login</title>
 </head>
-<head>
-  <title>Tela de Login</title>
-  <style>
-   
-  </style>
-</head>
+
 <body>
-  <img src="_imagens/logo.png" class="logo">
+  <header>
+
+    <a href="index.html"><img src="_imagens/logo.png" class="logo"></a>
+
+    <ul class="nav">
+        <li class="lista"><a href="index.html" class="lista_nav">HOME</a></li>
+        <li class="lista"><a href="pedidos.html" class="lista_nav">PEDIDOS</a></li>
+        <li class="lista"><a href="#" class="lista_nav">UNIDADES</a></li>
+    </ul>
+
+    <div class="botaoLogin">
+        <a href="cadastro.html"><button type="button" class="login">LOGIN</button></a>
+    </div>
+  </header>
+  
   <div class="container">
-    <h2>Tela de Login</h2>
+    <h2>Login</h2>
     <form>
       <input type="text" placeholder="Usuário" required>
       <input type="password" placeholder="Senha" required>
       <input type="submit" value="Entrar">
-      <a href="cadastro.html"><button type="button" class="botaocadastro">Cadastre-se</button></a>
+      <a class="botaocadastro" href="./cadastro.html">Cadastre-se</a>
     </form>
     
   </div>
