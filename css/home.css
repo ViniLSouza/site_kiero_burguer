@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap%27');
 body {
     background-color: #F77F00;
     width: 100%;
@@ -55,4 +56,80 @@ body {
     grid-column: 4;
     width: 40px;
     margin-left: auto;
+}
+#container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#container > header {
+    background: #F77F00;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+main {
+    background: #F77F00;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+footer {
+    background: #003049;
+    height: 7rem;
+}
+
+/* NAV */
+nav {
+    background: #003049;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    color: #ecedea;
+    border-right: 1px solid #d4e4ef;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #ecedea;
+    padding: 15px;
+}
+
+h1 {
+    color: #F77F00;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #003049;
+    height: 1em;
+}   
+h2, h3, h4, h5, h6, h7 {
+    color: #ecedea;
+    background-color: #003049;
+    border-right: 1px solid;
+    display: inline-block;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+.produto { margin-bottom: 20px; cursor: pointer; 
+}
+.produto p {
+    background-color: #003049;
+    color: whitesmoke;
+    padding: 5px 10px;
+}
+
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
