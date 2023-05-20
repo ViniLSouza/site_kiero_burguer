@@ -10,17 +10,15 @@ body {
     height: 650px;
     object-fit: cover;
     object-position: 0% 57%;
-    z-index: -3;
-    transform: scaleX(-1);
+    z-index: -2;
 }
 
 .logoFull {
     width: 700px;
     position: absolute;
-    top: 25%;
+    bottom: 25vw;
     left: 100px;
-    z-index: -2;
-    filter: drop-shadow(0 5px 5px #000000);
+
 }
 
 .mulher {
@@ -59,9 +57,6 @@ body {
     width: 40px;
     margin-left: auto;
 }
-
-/* Cardápio */
-
 #container {
     max-width: 1024px;
     margin: 0 auto;
@@ -76,13 +71,12 @@ body {
 main {
     background: #F77F00;
     font-size: 20px;
-    padding: 0 1em;
+    padding: 1rem;
 }
 
 footer {
     background: #003049;
     height: 7rem;
-
 }
 
 /* NAV */
