@@ -27,22 +27,17 @@
         </div>
 
     </header>
-    <div class="cadastro">
-        <form class="formulariocadastro">
-            <p class="formtitle">CRIE SUA CONTA</p>
+    <div class="container">
+        <div class="cadastro">
+            <form class="formulariocadastro">
+            <h1 class="formtitle">CRIE SUA CONTA</h1>
 
-            <label class="perguntas">Digite o seu nome completo:</label>
+            <label class="perguntas">Digite seu nome completo:</label>
             <input type="text" placeholder="Nome" class="respostas"/>
             <br>
 
             <label class="perguntas">Digite seu e-mail:</label>
             <input type="email" placeholder="E-mail" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Selecione o sexo:</label>
-            <input type="radio" id="masc" name="sexo" value="m"/><label for="masc" class="s">Masculino</label>
-            <input type="radio" id="fem" name="sexo" value="f" /><label for="fem" class="s">Feminino</label>
-            <input type="radio" id="out" name="sexo" value="o"/><label for="out" class="s">Outros</label>
             <br>
 
             <label class="perguntas">Informe sua data de nascimento:</label>
@@ -69,11 +64,15 @@
             <input type="password" placeholder="Senha" class="respostas"/>
             <br>
             
-            <input type="submit" value="Enviar" class="button1"/>
-            <input type="reset" value="Limpar" class="button2"/>
+            <div class="buttons">
+                <input type="submit" value="Enviar" class="button1"/>
+                <input type="reset" value="Limpar" class="button2"/>
+            </div>
         </form>
-        <div class="imagembox"><img src="_imagens/hamburguer.png" class="png"></div>
-    </div>
+        <div class="imagembox">
+            <img src="_imagens/hamburguer.png" class="png">
+        </div>
+     </div>       
 </body>
 
 </html>
