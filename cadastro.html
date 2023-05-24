@@ -30,44 +30,58 @@
     <div class="container">
         <div class="cadastro">
             <form class="formulariocadastro">
-            <h1 class="formtitle">CRIE SUA CONTA</h1>
+                <h1 class="formtitle">CRIE SUA CONTA</h1>
 
-            <label class="perguntas">Digite seu nome completo:</label>
-            <input type="text" placeholder="Nome" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Digite seu e-mail:</label>
-            <input type="email" placeholder="E-mail" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Informe sua data de nascimento:</label>
-            <input type="date" class="respostas">
-            <br>
-
-            <label class="perguntas">Digite seu CPF:</label>
-            <input type="text" placeholder="CPF" max="8" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Informe seu número de telefone:</label>
-            <input type="text" placeholder="(00)0000-0000" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Informe seu endereço:</label>
-            <input type="text" placeholder="Rua, número, bairro" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Crie uma senha de 6 dígitos:</label>
-            <input type="password" placeholder="Senha" max="6" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Confirme a senha:</label>
-            <input type="password" placeholder="Senha" class="respostas"/>
-            <br>
-            
-            <div class="buttons">
-                <input type="submit" value="Enviar" class="button1"/>
-                <input type="reset" value="Limpar" class="button2"/>
-            </div>
+                <div class="nome">
+                    <label>Digite seu nome completo:</label>
+                    <input type="text" placeholder="Nome"/>
+                </div>
+                <div class="email">
+                    <label>Digite seu e-mail:</label>
+                    <input type="email" placeholder="E-mail"/>
+                </div>
+                <div class="cpf">
+                    <label>Digite seu CPF:</label>
+                    <input type="text" placeholder="CPF" max="8"/>
+                </div>
+                <div class="box">
+                    <div class="data">
+                        <label>Informe sua data de nascimento:</label>
+                        <input type="date"/>
+                    </div>
+                    <div class="num">
+                        <label>Informe seu número de telefone:</label>
+                        <input type="text" placeholder="(00)0000-0000"/>
+                    </div>
+                </div>
+                <div class="rua">
+                    <label>Informe o nome da rua:</label>
+                    <input type="text" placeholder="Rua, número, bairro"/>
+                </div>
+                <div class="box">
+                    <div class="num_rua">
+                        <label>Informe o número da rua:</label>
+                        <input type="text" placeholder="Rua, número, bairro"/>
+                    </div>
+                    <div class="bairro">
+                        <label>Informe o bairro:</label>
+                        <input type="text" placeholder="Rua, número, bairro"/>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="senha">
+                        <label>Crie uma senha de 6 dígitos:</label>
+                        <input type="password" placeholder="Senha" max="6"/>
+                    </div>
+                    <div class="senha_conf">
+                        <label>Confirme a senha:</label>
+                        <input type="password" placeholder="Senha"/>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Enviar" class="button1"/>
+                    <input type="reset" value="Limpar" class="button2"/>
+                </div>
         </form>
         <div class="imagembox">
             <img src="_imagens/hamburguer.png" class="png">
