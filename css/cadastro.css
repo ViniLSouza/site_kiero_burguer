@@ -39,7 +39,7 @@ body {
     height: auto;
     overflow: hidden;
     background-color: var(--cor-principal);
-    padding: 10px 30px;
+    padding: 1%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -54,11 +54,36 @@ body {
     font-weight: 600;
     text-align: center;
 }
-.perguntas {
+.box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    background-color: #351f1f;
+}
+.nome, .email, .cpf, .rua {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data, .num, .num_rua, .bairro, .senha, .senha_conf {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D62828;
+}
+label {
     width: 100%;
     font-size: medium;
     color: var(--backgroud);
-    margin-bottom: 1%;
+    text-align: center;
 }
 input {
     width: 80%;
@@ -69,7 +94,7 @@ input {
     margin-bottom: 1%;
 }
 .buttons {
-    width: 60%;
+    width: 70%;
     height: auto;
     overflow: hidden;
     display: flex;
@@ -80,7 +105,8 @@ input {
     padding: 1%;
     border: none;
     background-color: var(--cor-escuro);
-    color: var(--branco); 
+    color: var(--branco);
+    font-size: medium;
 }
 .button1:hover, .button2:hover {
     background-color: var(--cor-claro);
@@ -94,7 +120,7 @@ input {
     justify-content: center;
 }   
 .png {
-    width: 90%; 
+    width: 90%;
 }
 @media screen and (max-width: 1100px){
     
