@@ -19,6 +19,7 @@ body {
     background-repeat: no-repeat;
 }
 .container {
+    margin-top: 5rem; 
     width: 100%;
     height: 600px;
     display: flex;
@@ -96,11 +97,11 @@ input {
 .png {
     width: 90%; 
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 1250px){
     .formulariocadastro{
-        width: 90%;
+        width: 100%;
     }
     .imagembox {
-        width: none;
+        display: none;
     }
 }
