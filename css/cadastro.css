@@ -26,7 +26,7 @@ body {
     align-items: center;
 }
 .cadastro {
-    width: 70%;
+    width: 80%;
     height: auto;
     overflow: hidden;
     border-radius: 15px;
@@ -58,10 +58,11 @@ body {
     width: 100%;
     height: auto;
     overflow: hidden;
-    display: flex;
     background-color: #351f1f;
+    display: flex;
+    flex-wrap: wrap;
 }
-.nome, .email, .cpf, .rua {
+.nome, .email, .rua {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -70,13 +71,14 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.data, .num, .num_rua, .bairro, .senha, .senha_conf {
+.data, .cpf, .cep, .num, .num_rua, .bairro, .senha, .senha_conf {
     width: 50%;
     height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #D62828;
 }
 label {
@@ -99,6 +101,7 @@ input {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    margin-top: 2%;
 }
 .button1, .button2 {
     width: 40%;
@@ -118,16 +121,26 @@ input {
     background-image: linear-gradient(to right, #003049, #ffffff00);
     display: flex;
     justify-content: center;
+    align-items: center;
 }   
 .png {
     width: 90%;
 }
-@media screen and (max-width: 1100px){
-    
-    .formulariocadastro{
-        width: 100%;
-    }
+@media screen and (max-width: 1100px) {
     .imagembox {
         display: none;
+    }
+    .formulariocadastro {
+        width: 100%;
+    } 
+}
+@media screen and (max-width: 600px) {
+    
+    .data, .cpf, .cep, .num, .num_rua, .bairro, .senha, .senha_conf {
+        width: 100%;  
+    } 
+    .cadastro {
+        width: 90%;
+        margin-top: 10%;
     }
 }
