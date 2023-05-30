@@ -67,18 +67,6 @@ body {
     text-align: center;
     padding-top: 1rem;
 }
-
-main {
-    background: #F77F00;
-    font-size: 20px;
-    padding: 1rem;
-}
-
-footer {
-    background: #003049;
-    height: 7rem;
-}
-
 /* NAV */
 nav {
     background: #003049;
@@ -101,7 +89,12 @@ nav ul li a {
     color: #ecedea;
     padding: 15px;
 }
-
+/* LANCHES ISABELLE */
+.lanches {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
 h1 {
     color: #F77F00;
     font-size: 50px;
