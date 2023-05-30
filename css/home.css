@@ -95,34 +95,35 @@ nav ul li a {
     height: auto;
     overflow: hidden;
 }
-h1 {
+.title_lanches {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #003049;
+    padding: 1%;
+    box-sizing: border-box;
+}
+.title_lanches h1 {
     color: #F77F00;
-    font-size: 50px;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
-    background-color: #003049;
-    height: 1em;
-}   
-h2, h3, h4, h5, h6, h7 {
+} 
+.container_lanches {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box_lanches {
+    width: 30%;
+    height: auto;
+    overflow: auto;
+}
+.box_lanches h2 {
     color: #ecedea;
     background-color: #003049;
-    border-right: 1px solid;
-    display: inline-block;
-    font-size: 15px;
-    padding: 1rem;
-}
-
-.produto { margin-bottom: 20px; cursor: pointer; 
-}
-.produto p {
-    background-color: #003049;
-    color: whitesmoke;
-    padding: 5px 10px;
-}
-
-
-#produtos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    font-size: 1.2em;
+    text-align: center;
 }
