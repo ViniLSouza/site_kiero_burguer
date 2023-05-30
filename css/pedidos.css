@@ -7,6 +7,8 @@
 }
 
 :root{
+    --cor-titulo:#454343;
+    --cor-botão: #fff;
     --cor-escuro: #D62828;
     --cor-claro: #F77F00;
     --cor-mais-claro: #FCBF49;
@@ -15,258 +17,99 @@
 
 }
 
-.corpo{
-    background-color: var(--cor-claro);
-    
-}
-
-.main-pedidos{
-    width: 80%;
-    background-color: var(--backgroud);
-    padding: 6vw;
-    display: block;
-    margin: 0 auto;
+body{
+    background-color: var(--cor-mais-claro);
 }
 
 .titulo-pedidos{
     text-align: center;
-    font-size: 28px;
-    display: flex;
-    font-weight: 400;
-    color: var(--cor-claro);
-    margin-bottom: 1vh;
-}
+    font-size: 24px;
+    margin: 2vw 0;
+    color: #313030;
 
-/*Inicio do andamento do pedido*/
-.numero-pedidos{
-    padding: 1em;
-    border: 2px solid var(--cor-escuro);
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 22px;
 }
-
+/* DESCRIÇÃO DA PRIMEIRA CAIXA DE INFORMAÇÕES */
 .primeira-informacao{
-    display: flex;
+    display: block;
+    justify-content: space-around;
+    font-weight: 500;
+    background-color: var(--backgroud);
+    border-radius: 10px;
+    margin: 1rem 10px 0 5px;
+    padding: 0.5rem;
+    padding-top: 15px;
+    box-shadow: 1px 1px 1px 1px black;
+    text-decoration: none;
+    color: #000;
+
 }
 
 .texto-pedido{
-    padding-right: 2rem;
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+    color: var(--cor-titulo);
 }
 
-.procedimento{
+.numero-pedido{
     display: flex;
-    list-style: none;
-    justify-content: center;
-    padding: 2rem 2rem 0 2rem;
-
-}
-
-.processo{
-    color: var(--cor-claro);
-    font-size: 1.3rem;
-}
-
-.distancia{
-   padding: 0 20vw;
-}
-
-/*Barra de progresso*/
-.progresso{
-    display: flex;
-    justify-content: space-around;
-    padding: 1em 9rem;
     align-items: center;
+    gap: 5px;
+    margin: 5px 0;
 }
 
 .bolinha{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(28, 220, 28);
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.bolinha-laranja{
+    height: 10px;
+    width: 10px;
     background-color: var(--cor-claro);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+    border: 1px solid #000;
+    border-radius: 15px;
 }
 
-.barra{
-    background-color: var(--cor-claro);
-    width: 30rem;
-    height: 8px;
-}
+/* BOTÕES DE AJUDA E DE ACOMPANHAMENTO */
 
-.barra-claro{
-    background-color: var(--cor-mais-claro); 
-    width: 30rem;
-    height: 4px;
-}
-
-.bolinha-claro{
-    background-color: var(--cor-mais-claro);
-    width: 14px;
-    height: 14px;
-    border: 4px solid var(--cor-claro);
-}
-
-/*detalhes dos pedidos*/
-.detalhes-pedidos{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.adicionais-pedido, .itens-adicionados{
-    color: var(--cor-claro);
-    font-weight: 500;
-}
-
-.endereco{
-    padding-top: 1em;
-}
-
-.espacamento-textos{
-    padding-bottom: 0.5rem;
-}
-/*detalhe dos valores do pedido*/
-.detalhe-valores{
+.acompanhar-pedido{
     display: flex;
-    align-items: center;
-}
-.valores-texto{
-    padding-right: 10rem;
-}
-.total-texto{
-    padding-right: 11rem;
+    justify-content: space-around;
+    margin: 15px 0 5px 0;
 }
 
-.cupom-texto{
-    padding-right: 12.90rem;
-}
-
-.entrega-texto{
-    padding-right: 5.80rem;
-}
-
-.espacamento-valores{
-    padding-top: 1rem;
-}
-
-.estilo-barrinha{
-    background-color: var(--cor-mais-claro);
-    width: 30rem;
-    height: 2px;
-    margin: 1rem 0;
-}
-
-.total{
-    padding-right: 13.50rem;
-}
-
-.imagem-mastercard{
-    width: 8%;
-}
-
-/*botão para refazer o pedido*/
-
-.refazer-pedido{
-    border: 0;
-    font-size: 1.5rem;
+.detalhe-acompanhamento{
+    text-decoration: none;
+    color: var(--cor-botão);
     background-color: var(--cor-escuro);
-    color: var(--branco);
-    border-radius: 5px;
-    padding: 0.5em 1em;
-    margin: 2em 0 0 10.1em;
+    text-align: center;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.refazer-pedido:hover{
-    background-color: var(--cor-claro);
-}
-
-.refazer-pedido:active{
-    background-color: var(--cor-mais-claro);
-    color: rgb(75, 74, 74);
-}
-
-
-@media screen and (max-width: 1366px){
-    .distancia{
-        padding: 0 10vw;
-     }
-
-     .processo{
-        
-     }
-
-    .progresso{
-        padding: 1em 0;
+@media screen and (min-width: 720px) {
+    .primeira-informacao{
+        margin: 2rem 5rem 0 5rem;
+        padding: 1rem 1.5rem;
     }
-    
-    .bolinha{
-        margin-left: 3rem;
-        width: 1.8%;
-        height: 14px;
-        border-radius: 50%;
+
+    .texto-pedido, p, .numero-pedido, .detalhe-acompanhamento{
+        font-size: 1.2rem;
     }
-    
-    .barra{
-        width: 25%;
-        height: 8px;
-    }
-    
-    .barra-claro{
-        width: 25%;
-        height: 4px;
-    }
-    
-    .bolinha-claro{
-        
-        width: 1.1%;
-        height: 8px;
+
+    .bolinha, .bolinha-laranja{
+        height: 15px;
+        width: 15px;
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    .distancia{
-        padding: 0 5vw;
-     }
-
-     .processo{
-        font-size: 18px;
-     }
-    
-    .progresso{
-        padding: 1em 0.2rem;    
-    }
-    
-    .bolinha{
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-    }
-    
-    .barra{
-        width: 150px;
-        height: 8px;
-    }
-    
-    .barra-claro{
-        width: 150px;
-        height: 4px;
-    }
-    
-    .bolinha-claro{
-        width: 8px;
-        height: 8px;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .progresso{
-        padding: 1em 1px;
-    }
-    .barra{
-        width: 90px;
-        height: 8px;
-    }
-    .barra-claro{
-        width: 90px;
-        height: 4px;
-    }
+@media screen and (min-width: 1320px){
+    .primeira-informacao{
+        margin: 2rem 20rem 0 20rem;
+        padding: 1rem 1.5rem;
+    } 
 }
