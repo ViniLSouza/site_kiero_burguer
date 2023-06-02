@@ -125,3 +125,29 @@ body{
     margin-top: 1rem;
     font-weight: 500;
 }
+
+@media screen and (min-width: 720px){
+
+    .pagamento, .titulo-pagamento, .texto-taxa, .texto-valor-total, .itens-adicionais, .titulo-itens-adicionais, .itens-pedido, .titulo-detalhes-pedido, .texto-andamento, .numero-pedido, .texto-horario, .texto-pedido, .titulo-entrega, .titulo-entrega, .endereco-entrega, .valor{
+        font-size: 1.5rem;
+    }
+
+    .pagamento{
+        grid-template-columns: 83% 17%;
+    }
+
+    .bolinha-laranja{
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media screen and (min-width: 1320px){
+    .pagamento{
+        grid-template-columns: 93% 7%;
+    }
+
+    .imagem-mastercard{
+        width: 50px;
+    }
+}
