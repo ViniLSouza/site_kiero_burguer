@@ -16,8 +16,9 @@ body {
 .logoFull {
     width: 700px;
     position: absolute;
-    bottom: 25vw;
+    bottom: 50%;
     left: 100px;
+    z-index: -2;
 
 }
 
