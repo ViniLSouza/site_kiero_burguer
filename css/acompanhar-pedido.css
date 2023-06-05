@@ -99,8 +99,6 @@ body{
 }
 
 .pagamento{
-    display: grid;
-    grid-template-columns: 75% 25%;
     font-weight: 500;
     align-items: center;
 }
@@ -112,7 +110,7 @@ body{
 }
 
 .imagem-mastercard{
-    width: 35%;
+    width: 40px;
 }
 
 /* PARTE DO ENDEREÇO */
@@ -130,11 +128,7 @@ body{
 
     .pagamento, .titulo-pagamento, .texto-taxa, .texto-valor-total, .itens-adicionais, .titulo-itens-adicionais, .itens-pedido, .titulo-detalhes-pedido, .texto-andamento, .numero-pedido, .texto-horario, .texto-pedido, .titulo-entrega, .titulo-entrega, .endereco-entrega, .valor{
         font-size: 1.5rem;
-    }
-
-    .pagamento{
-        grid-template-columns: 83% 17%;
-    }
+    }   
 
     .bolinha-laranja{
         height: 15px;
@@ -143,9 +137,6 @@ body{
 }
 
 @media screen and (min-width: 1320px){
-    .pagamento{
-        grid-template-columns: 93% 7%;
-    }
 
     .imagem-mastercard{
         width: 50px;
