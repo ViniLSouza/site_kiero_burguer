@@ -67,3 +67,26 @@ text-align: center;
 .login:active {
     background-color: #FCBF49;
 }
+
+@media screen and (max-width: 660px) {
+    header {
+        grid-template-rows: 50% 50%;
+        height: 7em;
+    }
+
+    .logo {
+        margin-top: 0.5em;
+        grid-column: 2;
+    }
+
+    .nav {
+        grid-row: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .botaoLogin {
+        grid-row: 1;
+        grid-column: 3;
+    }
+}
