@@ -98,6 +98,18 @@ body {
     width: 80%;
 }
 
+.batata {
+    width: 55%;
+}
+
+.frango {
+    width: 82%;
+}
+
+.nugget {
+    width: 76%;
+}
+
 .nomeLanche {
     color: #FFFFFF;
     font-size: 30px;
@@ -144,7 +156,7 @@ body {
 @media screen and (max-width: 1300px){
     .lanches {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+
     }
 }
 
@@ -167,7 +179,7 @@ body {
 
     .lanches {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+
     }
 }
 
