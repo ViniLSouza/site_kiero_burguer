@@ -178,7 +178,7 @@ body {
 
     .logoFull {
         width: 60%;
-        top: 35%;
+        top: 30%;
         left: 20%;
     }
 
@@ -208,6 +208,10 @@ body {
 }
 
 @media screen and (max-width: 400px){
+    .mulher {
+        bottom: 40%;
+    }
+
     .lanche {
         width: 60%;
     }
