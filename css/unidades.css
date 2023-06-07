@@ -37,25 +37,33 @@
     font-weight: 700;
     font-size: 22px;
 }
+.container-form{
+    padding: 1em;
+    border: 2px solid var(--cor-escuro);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 50px;
+}
+.endereco{
+    font-size: 28px;
+    display: flex;
+    font-weight: 400;
+    color: var(--cor-claro);
+    margin-top: 30px;
+    text-align: center;
+}
 .horario{
     font-size: 28px;
     display: flex;
     font-weight: 400;
     color: var(--cor-claro);
-    margin-top: 60px;
+    margin-top: 30px;
 }
-table, th, td {
+tr, td{
     padding: 1em;
     border: 2px solid var(--cor-escuro);
     border-radius: 10px;
     font-weight: 700;
     font-size: 22px;
 }
-.section{
-    padding: 1em;
-    border: 2px solid var(--cor-escuro);
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 22px;
-}
-
