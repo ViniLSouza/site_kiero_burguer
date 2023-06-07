@@ -14,20 +14,23 @@ body {
 }
 
 .logoFull {
-    width: 700px;
+    width: 40%;
     position: absolute;
     bottom: 50%;
     left: 100px;
-    z-index: -2;
+    z-index: -1;
 
 }
 
 .mulher {
     position: absolute;
-    width: 40%;
+    width: 50%;
+    top: 0;
     bottom: 0;
-    left: 60%;
-    z-index: -1;
+    left: 50%;
+    right: 0;
+    margin: auto;
+    z-index: -2;
     filter: drop-shadow(0 5px 10px #000000);
 }
 
@@ -49,12 +52,182 @@ body {
 
 .seta {
     grid-column: 1;
-    width: 40px;
+    width: 80%;
     transform: rotate(180deg);
 }
 
 .seta2 {
     grid-column: 4;
-    width: 40px;
+    width: 80%;
     margin-left: auto;
+}
+
+.burgers {
+    background-color: #e07400;
+    margin: 0 10em;
+}
+
+.tituloLanches {
+    background-color: #003049;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.titulo {
+    color: #F77F00;
+    font-size: 50px;
+}
+
+.lanches {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLanche {
+    width: 85%;
+    margin: 1em;
+    padding: 1em;
+    background-color: #003049;
+    border-radius: 25px;
+}
+
+.lanche {
+    width: 80%;
+}
+
+.nomeLanche {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.textoLanche {
+    font-size: 15px;
+    color: #F77F00;
+    margin-top: 1em;
+}
+
+.preço {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 0.5em;
+}
+
+.comprar {
+    width: 80%;
+    height: 2em;
+    font-size: 20px;
+    background-color: #d62828;
+    color: #FFFFFF;
+    border-radius: 0 10px;
+    border: 0;
+    margin-top: 1em;
+}
+
+.comprar:hover {
+    background-color: #F77F00;
+    color:  #EAE2B7;
+}
+
+.comprar:active {
+    background-color: #FCBF49;
+}
+
+@media screen and (max-width: 16710px){
+    .nomeLanche {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .lanches {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .mulher {
+        width: 60%;
+        left: 40%;
+    }
+    
+    .barraComent {
+        height: 6em;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .mulher {
+        width: 80%;
+        left: 20%;
+    }
+
+    .lanches {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .titulo {
+        color: #F77F00;
+        font-size: 30px;
+    }
+
+    .restaurante {
+        height: 450px;
+    }
+
+    .logoFull {
+        width: 60%;
+        top: 30%;
+        left: 20%;
+    }
+
+    .mulher {
+        width: 80%;
+        bottom: 30%;
+        left: 10%;
+    }
+
+    .barraComent {
+        margin-top: 21em;
+    }
+
+    .burgers {
+        margin: 0 4em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mulher {
+        width: 90%;
+        bottom: 40%;
+    }
+
+    .burgers {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .mulher {
+        bottom: 40%;
+    }
+
+    .lanche {
+        width: 60%;
+    }
+
+    .comprar {
+        width: 60%;
+    }
+
+    .textoLanche {
+        width: 100%;
+        font-size: 13px;
+    }
 }
