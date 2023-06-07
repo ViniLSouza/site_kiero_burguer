@@ -12,7 +12,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-family: var(--font-principal), sans-serif; 
-    background-image: url(../_imagens/restaurante.jpg);
+    background-image: url(../_imagens/restaurante_resized.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -26,7 +26,6 @@ body {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
-    background-image: url(../_imagens/keroburguer.jpg);
    
 }
   
