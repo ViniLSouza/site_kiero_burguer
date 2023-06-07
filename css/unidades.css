@@ -50,15 +50,13 @@
     display: flex;
     font-weight: 400;
     color: var(--cor-claro);
-    margin-top: 30px;
-    text-align: center;
 }
 .horario{
     font-size: 28px;
     display: flex;
     font-weight: 400;
     color: var(--cor-claro);
-    margin-top: 30px;
+    margin-top: 70px;
 }
 tr, td{
     padding: 1em;
@@ -66,4 +64,14 @@ tr, td{
     border-radius: 10px;
     font-weight: 700;
     font-size: 22px;
+}
+.mapa{
+    margin-left: 80px;
+    float: right;
+}
+@media(max-width:200%){
+    .mapa{
+        width: 50%;
+        height: 50%;
+    }
 }
