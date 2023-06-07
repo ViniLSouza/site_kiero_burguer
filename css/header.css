@@ -17,6 +17,7 @@ header {
     width: 100%;
     height: 5em;
     align-items: center;
+    box-shadow: 0 5px 10px black;
 }
 
 .logo {
@@ -66,4 +67,39 @@ text-align: center;
 
 .login:active {
     background-color: #FCBF49;
+}
+
+@media screen and (max-width: 700px){
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        height: 5em;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .nav {
+        grid-row: 1;
+        margin: 1em;
+    }
+
+    .lista_nav {
+        font-size: 20px;
+    }
+
+    .botaoLogin {
+        grid-row: 2;
+        text-align: end;
+        margin-right: 0;
+    }
+    
+    .login {
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 0 0 10px 10px;
+    }
 }

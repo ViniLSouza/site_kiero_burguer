@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/acompanhar-pedido.css">
+        <link rel="icon" href="./_imagens/favicon.png">
+        <title>Pedido</title>
+    </head>
+    <body>
+
+        <header>
+
+            <a href="index.html"><img src="_imagens/logo.png" class="logo"></a>
+    
+            <ul class="nav">
+                <li class="lista"><a href="index.html" class="lista_nav">HOME</a></li>
+                <li class="lista"><a href="pedidos.html" class="lista_nav">PEDIDOS</a></li>
+                <li class="lista"><a href="unidades.html" class="lista_nav">UNIDADES</a></li>
+            </ul>
+    
+            <div class="botaoLogin">
+                <a href="login.html"><button type="button" class="login">LOGIN</button></a>
+            </div>
+    
+        </header>
+
+        <div class="numero-pedidos">
+            <!--primeira linha dos detalhes do pedido -->
+            <div class="primeira-informacao" href="./pedido.html">
+                <p class="texto-pedido">PEDIDO ENTREGUE</p>
+                <p class="texto-horario">13/05 ÀS 20:56</p>
+
+                <div class="numero-pedido">
+                    <p>Pedido N° 35</p>
+                </div> 
+
+                <div class="descricao">
+                    <div class="bolinha-verde"></div>
+                    <p class="texto-andamento">Pronto</p>
+                </div>
+            </div>
+
+            <div class="pedido-detalhes">
+                <!-- Detalhes do pedido -->
+                <h1 class="titulo-detalhes-pedido">Detalhes do pedido</h1>
+                <div class="itens">
+                    <p class="itens-pedido">1 Big Burguer:</p>
+                    <p class="itens-pedido">R$ 26,30</p> 
+                </div>
+                
+
+                <!-- Adicionais do pedido -->
+                <h2 class="titulo-itens-adicionais">Adicionais</h2>
+                <div class="adicionais">
+                    <p class="itens-adicionais">Bacon</p> 
+                    <p class="itens-adicionais">5,00</p>
+                </div> 
+                
+                
+                
+                <div class="taxa-entrega">
+                    <p class="texto-taxa">Taxa de entrega:</p>
+                    <p class="texto-texa detalhe-cor valor">R$ 5,00</p>
+                </div>
+
+                <div class="valor-total">
+                    <p class="texto-valor-total">Valor total:</p>
+                    <p class="texto-valor-total detalhe-cor">R$ 36,30</p>
+                </div>
+
+                <h2 class="titulo-pagamento">Tipo de pagamento</h2>
+                
+                <div class="pagamento">
+                    <div class="descricao-tipo-pagamento">
+                        <img src="./_imagens/mastercard.png" alt="icone do cartão mastercard" class="imagem-mastercard"> 
+                        <p>••••0000 MasterCard</p>
+                    </div>                                                                          
+                </div>
+
+            </div>
+
+            <div class="endereco-entrega">
+                <h1 class="titulo-entrega">Entrega em</h1>
+                <div class="descricao-endereco">
+                    <p class="texto-endereco">R. Jurema de Lurdes, 265 - APTO 1101</p>
+                    <p class="texto-endereco">Centro, Curitiba - PR</p>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

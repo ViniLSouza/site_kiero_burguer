@@ -19,7 +19,7 @@
         <ul class="nav">
             <li class="lista"><a href="index.html" class="lista_nav">HOME</a></li>
             <li class="lista"><a href="pedidos.html" class="lista_nav">PEDIDOS</a></li>
-            <li class="lista"><a href="#" class="lista_nav">UNIDADES</a></li>
+            <li class="lista"><a href="unidades.html" class="lista_nav">UNIDADES</a></li>
         </ul>
 
         <div class="botaoLogin">
@@ -27,53 +27,74 @@
         </div>
 
     </header>
-    <div class="cadastro">
-        <form class="formulariocadastro">
-            <p class="formtitle">CRIE SUA CONTA</p>
+    
+    <div class="container">
+        <div class="cadastro">
+            <form class="formulariocadastro">
+                <h1 class="formtitle">CRIE SUA CONTA</h1>
 
-            <label class="perguntas">Digite o seu nome completo:</label>
-            <input type="text" placeholder="Nome" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Digite seu e-mail:</label>
-            <input type="email" placeholder="E-mail" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Selecione o sexo:</label>
-            <input type="radio" id="masc" name="sexo" value="m"/><label for="masc" class="s">Masculino</label>
-            <input type="radio" id="fem" name="sexo" value="f" /><label for="fem" class="s">Feminino</label>
-            <input type="radio" id="out" name="sexo" value="o"/><label for="out" class="s">Outros</label>
-            <br>
-
-            <label class="perguntas">Informe sua data de nascimento:</label>
-            <input type="date" class="respostas">
-            <br>
-
-            <label class="perguntas">Digite seu CPF:</label>
-            <input type="text" placeholder="CPF" max="8" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Informe seu número de telefone:</label>
-            <input type="text" placeholder="(00)0000-0000" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Informe seu endereço:</label>
-            <input type="text" placeholder="Rua, número, bairro" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Crie uma senha de 6 dígitos:</label>
-            <input type="password" placeholder="Senha" max="6" class="respostas"/>
-            <br>
-
-            <label class="perguntas">Confirme a senha:</label>
-            <input type="password" placeholder="Senha" class="respostas"/>
-            <br>
-            
-            <input type="submit" value="Enviar" class="button1"/>
-            <input type="reset" value="Limpar" class="button2"/>
-        </form>
-        <div class="imagembox"><img src="_imagens/hamburguer.png" class="png"></div>
-    </div>
+                <div class="nome">
+                    <label>Digite seu nome completo:</label>
+                    <input type="text" placeholder="Nome"/>
+                </div>
+                <div class="email">
+                    <label>Digite seu e-mail:</label>
+                    <input type="email" placeholder="E-mail"/>
+                </div>
+                <div class="box">
+                    <div class="cpf">
+                        <label>Digite seu CPF:</label>
+                        <input type="text" placeholder="CPF" max="8"/>
+                    </div>
+                    <div class="cep">
+                        <label>Digite seu CEP:</label>
+                        <input type="text" placeholder="CEP" max="8"/>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="data">
+                        <label>Informe sua data de nascimento:</label>
+                        <input type="date"/>
+                    </div>
+                    <div class="num">
+                        <label>Informe seu número de telefone:</label>
+                        <input type="text" placeholder="(00)0000-0000"/>
+                    </div>
+                </div>
+                <div class="rua">
+                    <label>Informe o nome da rua:</label>
+                    <input type="text" placeholder="Rua"/>
+                </div>
+                <div class="box">
+                    <div class="num_rua">
+                        <label>Informe o número da rua:</label>
+                        <input type="text" placeholder="Número"/>
+                    </div>
+                    <div class="bairro">
+                        <label>Informe o bairro:</label>
+                        <input type="text" placeholder="Bairro"/>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="senha">
+                        <label>Crie uma senha de 6 dígitos:</label>
+                        <input type="password" placeholder="Senha" max="6"/>
+                    </div>
+                    <div class="senha_conf">
+                        <label>Confirme a senha:</label>
+                        <input type="password" placeholder="Senha" max="6"/>
+                    </div> 
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Enviar" class="button1"/>
+                    <input type="reset" value="Limpar" class="button2"/>
+                </div>
+            </form>
+            <div class="imagembox">
+                <img src="_imagens/hamburguer.png" class="png">
+            </div>
+        </div>
+     </div>       
 </body>
 
 </html>
