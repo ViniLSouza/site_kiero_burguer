@@ -52,14 +52,13 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-transform: uppercase;
-
-    
+    text-transform: uppercase;    
 }
   
 input[type="submit"]:hover {
     background-color: var(--cor-claro);
 }
+
 .botaocadastro {
     text-decoration: none;
     font-size: 12px;
@@ -73,6 +72,7 @@ input[type="submit"]:hover {
     cursor: pointer;  
     text-transform: uppercase;  
 }
+
 .botaocadastro:hover {
     background-color: var(--cor-claro);
 }
