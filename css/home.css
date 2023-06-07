@@ -172,6 +172,11 @@ body {
 }
 
 @media screen and (max-width: 700px){
+    .titulo {
+        color: #F77F00;
+        font-size: 30px;
+    }
+
     .restaurante {
         height: 450px;
     }
