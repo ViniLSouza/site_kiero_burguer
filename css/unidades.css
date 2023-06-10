@@ -28,7 +28,8 @@
     display: flex;
     font-weight: 400;
     color: var(--cor-claro);
-    margin-bottom: 1vh;
+    margin: 1em 0;
+
 }
 .texto{
     padding: 1em;
