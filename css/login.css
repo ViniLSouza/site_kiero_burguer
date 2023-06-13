@@ -22,6 +22,7 @@ body {
     width: 30%;
     margin: 0% auto;
     margin-top: 10vw;
+    margin-bottom: 7.4vw;
     background-color: var(--cor-principal);
     padding: 20px;
     border-radius: 15px;
@@ -58,18 +59,22 @@ input[type="submit"]:hover {
     background-color: var(--cor-claro);
 }
 
+.box_botao {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 .botaocadastro {
     text-decoration: none;
     font-size: 12px;
-    margin-left: 3.9vw;
-    width: 50%;
-    padding: 11px 4.3vw;
+    width: 40%;
+    padding: 10px;
     background-color: var(--cor-escuro);
     color: white;
-    border: none;
     border-radius: 5px;
     cursor: pointer;  
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .botaocadastro:hover {
@@ -78,7 +83,7 @@ input[type="submit"]:hover {
 @media (max-width: 767px) {
     .container {
         width: 90%;
-        margin-top: 10vh;
+        margin-top: 2vh;
         text-align: center; 
         margin-top: 50%;
     }
