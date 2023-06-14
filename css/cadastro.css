@@ -47,7 +47,7 @@ body {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 4%;
+    padding: 3%;
     box-sizing: border-box;
 }
 
@@ -129,7 +129,7 @@ input {
 }   
 
 .png {
-    width: 100%;
+    width: 85%;
 }
 
 @media screen and (max-width: 1100px) {

@@ -52,7 +52,7 @@ body {
 
 .background {
     width: 100%;
-    padding: 10%;
+    padding: 9%;
     box-sizing: border-box;
     background-image: url(../_imagens/restaurante_resized.jpg);
     background-size: cover;
