@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif ;
+}
+
+:root{
+    --cor-titulo:#454343;
+    --cor-botão: #fff;
+    --cor-escuro: #D62828;
+    --cor-claro: #F77F00;
+    --cor-mais-claro: #FCBF49;
+    --branco: #fff;
+    --backgroud: #EAE2B7;
+
+}
+
+body{
+    background-color: var(--cor-mais-claro);
+}
+
+.caixa-pedido{
+    display: block;
+    justify-content: space-between;
+    margin: 2rem 10px 0 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 10px;
+    background-color: var(--backgroud);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.aviso{
+    color: var(--cor-claro);
+}
+
+.aviso-aceito{
+    color: rgb(5, 152, 5);
+}
+
+.genrenciamento-pedido{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor-escuro);
+    padding: 10px;
+    margin-top: 1rem;
+    border-radius: 10px;
+   
+    justify-content: center;
+}
