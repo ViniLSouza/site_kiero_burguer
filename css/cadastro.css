@@ -8,33 +8,42 @@
     --branco: #fff;
     --backgroud: #EAE2B7;    
 }
+
 *{
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: var(--font-principal), sans-serif; 
     background-image: url(../_imagens/restaurante_resized.jpg);
 }
+
 .height_auto {
     height: auto;
     overflow: hidden;
 }
+
 .d-flex {
     display: flex;
 }
+
 .flex-dir-c {
     flex-direction: column;
 }
+
 .just-cont-c {
     justify-content: center;
 }
+
 .just-cont-sp {
     justify-content: space-between;
 }
+
 .align-center {
     align-items: center;
 }
+
 .container { 
     width: 100%;
     background-size: cover;
@@ -42,17 +51,20 @@ body {
     padding: 4%;
     box-sizing: border-box;
 }
+
 .cadastro {
     width: 80%;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #000000;
 }
+
 .formulariocadastro {
     width: 50%;
     background-color: var(--cor-principal);
     padding: 1%;
     box-sizing: border-box;
 }
+
 .formtitle {
     width: 100%;
     font-size: xx-large;
@@ -60,24 +72,29 @@ body {
     font-weight: 600;
     text-align: center;
 }
+
 .box {
     width: 100%;
     flex-wrap: wrap;
 }
+
 .nome, .email, .rua {
     width: 100%;
     margin-bottom: 1%;
 }
+
 .data, .cpf, .cep, .num, .num_rua, .bairro, .senha, .senha_conf {
     width: 50%;
     flex-wrap: wrap;
 }
+
 label {
     width: 100%;
     font-size: medium;
     color: var(--backgroud);
     text-align: center;
 }
+
 input {
     width: 80%;
     font-size: medium;
@@ -86,10 +103,12 @@ input {
     border-radius: 5px;
     margin-bottom: 1%;
 }
+
 .buttons {
     width: 70%;
     margin-top: 2%;
 }
+
 .button1, .button2 {
     width: 40%;
     padding: 1%;
@@ -98,18 +117,22 @@ input {
     color: var(--branco);
     font-size: medium;
 }
+
 .button1:hover, .button2:hover {
     background-color: var(--cor-claro);
 }
+
 .imagembox {
     width: 50%;
     background-image: linear-gradient(to right, #003049, #ffffff00);
     backdrop-filter: blur(5px);
     z-index: 1;
 }   
+
 .png {
     width: 100%;
 }
+
 @media screen and (max-width: 1100px) {
     .imagembox {
         display: none;
@@ -118,6 +141,7 @@ input {
         width: 100%;
     } 
 }
+
 @media screen and (max-width: 600px) {
     
     .data, .cpf, .cep, .num, .num_rua, .bairro, .senha, .senha_conf {
