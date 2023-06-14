@@ -16,6 +16,9 @@ body {
     font-family: var(--font-principal), sans-serif; 
     background-image: url(../_imagens/restaurante_resized.jpg);
 }
+main{
+    height: 25.5vh;
+}
 .height_auto {
     height: auto;
     overflow: hidden;
@@ -111,6 +114,7 @@ input {
     width: 100%;
 }
 @media screen and (max-width: 1100px) {
+   
     .imagembox {
         display: none;
     }
