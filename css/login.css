@@ -11,17 +11,92 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-family: var(--font-principal), sans-serif; 
+    font-family: var(--font-principal), sans-serif;
     background-image: url(../_imagens/restaurante_resized.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
 }
 
-main{
-    height: 32vh;
+*{
+    margin: 0;
+    padding: 0;
 }
-  
+
+.height_auto {
+    height: auto;
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-dir-c {
+    flex-direction: column;
+}
+
+.just-cont-c {
+    justify-content: center;
+}
+
+.just-cont-sp {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/*OPCOES DE LOGIN*/
+
+.background {
+    width: 100%;
+    padding: 10%;
+    box-sizing: border-box;
+    background-image: url(../_imagens/restaurante_resized.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box {
+    width: 40%;
+    background-color: var(--cor-principal);
+    color: var(--backgroud);
+    text-align: center;
+    font-size: larger;
+    padding: 4%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px #000000;
+    border-radius: 15px;
+}
+
+.button-c {
+    width: 90%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: var(--cor-claro);
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border: none;
+}
+
+.button-r {
+    width: 90%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: #D62828;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border: none;
+}
+
+.box a{
+    color: #000000;
+}
+
+
+/*LOGIN*/
 .container {
     
     width: 30%;
