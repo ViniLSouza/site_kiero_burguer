@@ -22,7 +22,7 @@ body{
     background-color: var(--cor-mais-claro);
 }
 
-.caixa-gerenciamento, .caixa-pedido, .opcoes, .escolher-tempo{
+.caixa-gerenciamento, .caixa-pedido, .opcoes, .escolher-tempo, .nivel-processo{
     background-color: var(--backgroud);
     margin: 2rem 10px 0 5px;
     border-radius: 10px;
@@ -45,10 +45,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.opcoes{
-    display: flex;
-    justify-content: space-around;
-}
 
 .botao{
     text-decoration: none;
@@ -58,7 +54,7 @@ body{
     border-radius: 10px;
 }
 
-.aceitar{
+.aceitar, .avancar{
     background-color: var(--verde);
 }
 
@@ -81,7 +77,29 @@ body{
     margin-top: 1rem;
 }
 
-.botoes{
+.botoes, .opcoes, .niveis{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+/* **********************************NIVEL DE PROCESSO DO PEDIDO**************************************** */
+
+.titulo-processo, .avancar{
+    display: flex;
+    justify-content: center;
+}
+
+.niveis{
+    margin-top: 1rem;
+}
+
+.texto-nivel{
+    font-size: 14px;
+    color: var(--cor-titulo);
+}
+
+.nivel-atual{
+    font-size: 18px;
+    color: var(--cor-claro);
 }
