@@ -103,3 +103,16 @@ body{
     font-size: 18px;
     color: var(--cor-claro);
 }
+
+@media screen and (min-width: 720px) {
+    .container-gerenciamento{
+        margin: 3rem 6rem;
+    }
+    .nome, .horario, .numero-pedido, .telefone, .endereco, .titulo-itens, .botao, .nivel-atual{
+        font-size: 1.5rem;
+    }
+
+    .itens, .texto-nivel{
+        font-size: 1.4rem;
+    }
+}
