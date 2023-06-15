@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/gerenciamento.css">
+    <link rel="stylesheet" href="../css/cardapio.css">
     <title>Cardápio</title>
 </head>
 <body>
@@ -28,37 +28,50 @@
 
     </header>
 
-    <section>
+    <section class=" d-flex flex-dir-c align-center">
         <div class="titulo">
             <h1>CARDÁPIO</h1>
         </div>
 
-        <div class="box-add secao">
+        <div class="box-pedido d-flex just-cont-sp">
             <input type="text" placeholder="Adicionar nome da sessão" class="texto-add">
+            <button type="button" class="add-button">ADICIONAR</button>
         </div>
-        <div class="box-add-pedido">
-            <div class="add-img-box">
-                <img src="_imagens/icone-add.png">
+
+        <div class="box-pedido height_auto d-flex just-cont-sp">
+            <div class="add-img-box d-flex">
+                <img src="../_imagens/icone-add.png">
             </div>
 
-            <div class="container texto">
+            <div class="container-info d-flex just-cont-sp align-center">
                 <form>
-                    <input type="text" placeholder="Nome do lache" class="texto-add">
-                    <input type="text" placeholder="Descrição" class="texto-add">
+                    <input type="text" placeholder="Nome do lanche" class="texto-add">
+                    <input type="textarea" placeholder="Descrição" class="texto-add">
                     <input type="number" placeholder="Preço" class="texto-add">
-                    <a href="opcoes-login.html"><button type="button" class="login">LOGIN</button></a> 
                 </form>
+                <div class="box-button">
+                    <button type="button" class="pedido-button">ADICIONAR</button>
+                </div>
             </div>
         </div>
 
-        <div class="box-pedido">
-            <div class="img box">
-                <img src="_imagens/burger_1_resized.png">
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="titulo">
+                <h2>LANCHES</h2>
             </div>
+            <div class="arraste-box">
+                <img src="../_imagens/arraste.png" class="arraste">
+            </div>
+        </div>
 
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/burger_1_resized.png">
+            </div>
+        
             <div class="container-texto">
                 <div class="nome">
-                    <h2>Dream Cheese</h2>
+                    <h3>Dream Cheese</h3>
                 </div>
                 <div class="texto">
                     <p>Pão riviera, hamburger de costela, queijo cheddar, bacon, alface, tomate e creamcheese</p>
@@ -67,98 +80,223 @@
                     <p>R$23,90</p>
                 </div>
             </div>
-
-            <div class="box-pedido">
-                <div class="img box">
-                    <img src="_imagens/burger_2_resized.png">
-                </div>
-    
-                <div class="container-texto">
-                    <div class="nome">
-                        <h2>Sanduíche Sandwich</h2>
-                    </div>
-                    <div class="texto">
-                        <p>Pão riviera, pernil desfiado, queijo cheddar, maionese de alho, tomate e cheiro verde</p>
-                    </div>
-                    <div class="preço">
-                        <p>R$21,90</p>
-                    </div>
-                </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
             </div>
-
-            <div class="box-pedido">
-                <div class="img box">
-                    <img src="_imagens/burger_3_resized.png">
-                </div>
-    
-                <div class="container-texto">
-                    <div class="nome">
-                        <h2>Smash Burguer</h2>
-                    </div>
-                    <div class="texto">
-                        <p>Pão riviera, hamburger de costela, quejo cheddar, cebola crispy e maionese</p>
-                    </div>
-                    <div class="preço">
-                        <p>R$22,90</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box-pedido">
-                <div class="img box">
-                    <img src="_imagens/burger_4_resized.png">
-                </div>
-    
-                <div class="container-texto">
-                    <div class="nome">
-                        <h2>Veggie Burguer</h2>
-                    </div>
-                    <div class="texto">
-                        <p>Pão riviera, hamburger do futuro (proteina de soja), queijo cheddar, alface, tomate e maionese</p>
-                    </div>
-                    <div class="preço">
-                        <p>R$19,90</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box-pedido">
-                <div class="img box">
-                    <img src="_imagens/burger_4_resized.png">
-                </div>
-    
-                <div class="container-texto">
-                    <div class="nome">
-                        <h2>Kiero Burguer</h2>
-                    </div>
-                    <div class="texto">
-                        <p>Pão riviera, calabresa acebolada, queijo mussarela, vinagrete e maionese</p>
-                    </div>
-                    <div class="preço">
-                        <p>R$22,00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box-pedido">
-                <div class="img box">
-                    <img src="_imagens/burger_4_resized.png">
-                </div>
-    
-                <div class="container-texto">
-                    <div class="nome">
-                        <h2>Kiero Burguer</h2>
-                    </div>
-                    <div class="texto">
-                        <p>Pão riviera, calabresa acebolada, queijo mussarela, vinagrete e maionese</p>
-                    </div>
-                    <div class="preço">
-                        <p>R$22,00</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
+        
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/burger_2_resized.png">
+            </div>
+        
+            <div class="container-texto">
+                <div class="nome">
+                    <h3>Sanduíche Sandwich</h3>
+                </div>
+                <div class="texto">
+                    <p>Pão riviera, pernil desfiado, queijo cheddar, maionese de alho, tomate e cheiro verde</p>
+                </div>
+                <div class="preço">
+                    <p>R$21,90</p>
+                </div>
+            </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+        </div>
+        
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/burger_3_resized.png">
+            </div>
+        
+            <div class="container-texto">
+                <div class="nome">
+                    <h3>Smash Burguer</h3>
+                </div>
+                <div class="texto">
+                    <p>Pão riviera, hamburger de costela, quejo cheddar, cebola crispy e maionese</p>
+                </div>
+                <div class="preço">
+                    <p>R$22,90</p>
+                </div>
+            </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+        </div>
+        
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/burger_4_resized.png">
+            </div>
+        
+            <div class="container-texto">
+                <div class="nome">
+                    <h3>Veggie Burguer</h3>
+                </div>
+                <div class="texto">
+                    <p>Pão riviera, hamburger do futuro (proteina de soja), queijo cheddar, alface, tomate e maionese</p>
+                </div>
+                <div class="preço">
+                    <p>R$19,90</p>
+                </div>
+            </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+        </div>
+        
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/burger_4_resized.png">
+            </div>
+        
+            <div class="container-texto">
+                <div class="nome">
+                    <h3>Kiero Burguer</h3>
+                </div>
+                <div class="texto">
+                    <p>Pão riviera, calabresa acebolada, queijo mussarela, vinagrete e maionese</p>
+                </div>
+                <div class="preço">
+                    <p>R$22,00</p>
+                </div>
+            </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+        </div>
+        
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/burger_5_resized.png">
+            </div>
+        
+            <div class="container-texto">
+                <div class="nome">
+                    <h3>Kiero Burguer</h3>
+                </div>
+                <div class="texto">
+                    <p>Pão riviera, calabresa acebolada, queijo mussarela, vinagrete e maionese</p>
+                </div>
+                <div class="preço">
+                    <p>R$22,00</p>
+                </div>
+            </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+        </div>
+        
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/burger_6_resized.png">
+            </div>
+        
+            <div class="container-texto">
+                <div class="nome">
+                    <h3>Big Burguer</h3>
+                </div>
+                <div class="texto">
+                    <p>Pão riviera, hamburger de costela, queijo cheddar, bacon, ovo frito, alface, tomate e maionese</p>
+                </div>
+                <div class="preço">
+                    <p>R$26,90</p>
+                </div>
+            </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+        </div>
+
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="titulo">
+                <h2>PORÇÕES</h2>
+            </div>
+            <div class="arraste-box">
+                <img src="../_imagens/arraste.png" class="arraste">
+            </div>
+        </div>
+
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/batatafrita_resized.png">
+            </div>
+        
+            <div class="container-texto">
+                <div class="nome">
+                    <h3>Batata frita</h3>
+                </div>
+                <div class="texto">
+                    <p>Porção de 500gr de Batata Frita
+                        (Adcional de queijo e bacon R$5,00)</p>
+                </div>
+                <div class="preço">
+                    <p>R$19,90</p>
+                </div>
+            </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+        </div>
+
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/frangofrito_resized.png">
+            </div>
+        
+            <div class="container-texto">
+                <div class="nome">
+                    <h3>Frango frito</h3>
+                </div>
+                <div class="texto">
+                    <p>Porção de 600gr de Frango Frito
+                        (Com ou sem molho de pimenta)</p>
+                </div>
+                <div class="preço">
+                    <p>R$30,00</p>
+                </div>
+            </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+        </div>
+
+        <div class="box-pedido d-flex just-cont-sp align-center">
+            <div class="img-box d-flex">
+                <img src="../_imagens/nugget_resized.png">
+            </div>
+        
+            <div class="container-texto">
+                <div class="nome">
+                    <h3>Nuggets</h3>
+                </div>
+                <div class="texto">
+                    <p>Porção de 500gr de Nuggets
+                        (Frango ou peixe)</p>
+                </div>
+                <div class="preço">
+                    <p>R$25,90</p>
+                </div>
+            </div>
+            <div class="box-buttons d-flex just-cont-se">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Excluir</button>
+            </div>
+        </div>
+
+        
     </section>
 
     <footer class="rodape">
