@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto';
+}
+
+/* Header */
+
+header {
+    background-color: #003049;
+    top: 0;
+    position: sticky;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    width: 100%;
+    height: 5em;
+    align-items: center;
+    box-shadow: 0 5px 10px black;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 2em;
+}
+
+.nav {
+    text-align: center;
+}
+
+.lista {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.lista_nav {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f77f00;
+}
+
+.lista_nav:hover {
+    color: #FCBF49;
+}
+
+.botaoLogin {
+    text-align: end;
+    margin-right: 2em;
+}
+
+.login {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #d62828;
+    color: #FFFFFF;
+    border-radius: 0 10px;
+    border: 0;
+    margin: 0 auto;
+}
+
+.login:hover {
+    background-color: #F77F00;
+    color:  #EAE2B7;
+}
+
+.login:active {
+    background-color: #FCBF49;
+}
+
+@media screen and (max-width: 700px){
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        height: 5em;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .nav {
+        grid-row: 1;
+        margin: 1em;
+    }
+
+    .lista_nav {
+        font-size: 15px;
+    }
+
+    .botaoLogin {
+        grid-row: 2;
+        text-align: end;
+        margin-right: 0;
+    }
+    
+    .login {
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 0 0 10px 10px;
+    }
+}
