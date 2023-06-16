@@ -1,0 +1,81 @@
+.button-1 {
+    width: 40%;
+    padding: 1%;
+    border: none;
+    background-color: var(--cor-escuro);
+    color: var(--branco);
+    font-size: medium;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.a-button-2 {
+    width: 40%;
+}
+
+.button-2 {
+    width: 100%;
+    padding: 2.5%;
+    border: none;
+    background-color: var(--cor-escuro);
+    color: var(--branco);
+    font-size: medium;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button-1:hover, .button-2:hover {
+    background-color: var(--cor-claro);
+}
+
+.imagembox {
+    display: none;
+}
+
+.formulariocadastro {
+    width: 100%;
+}
+
+.cadastro {
+    width: 70%;
+}
+
+.titulo-horario {
+    width: 80%;
+    color:  #EAE2B7;
+    font-size: small;
+    padding: 1%;
+    text-align: center;
+}
+
+.box {
+    width: 90%;
+}
+
+.hor {
+    width: 30%;
+    padding: 1%;
+}
+@media screen and (max-width: 1100px) {
+   
+   .cadastro {
+    width: 90%;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   
+   .cadastro {
+        width: 95%;
+        margin-top: 10%;
+        flex-direction: row;
+   }
+   .box {
+        flex-direction: column;
+        width: 90%;
+        padding: 2%;
+   }
+   .hor {
+        width: 100%;
+   }
+}
