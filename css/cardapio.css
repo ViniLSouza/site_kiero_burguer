@@ -104,12 +104,10 @@ input, .form-add input {
     width: 80%;
     padding: 1%;
     box-sizing: border-box;
-    background-color: aqua;
 }
 
 form {
     width: 70%;
-    background-color: #D62828;
 }
 
 .box-button {
@@ -180,7 +178,6 @@ form {
 
 .titulo, .arraste-box {
     width: 40%;
-    background-color: aqua;
 }
 
 @media screen and (max-width: 1100px) {
