@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap%27');
+:root {
+    --font-principal: 'Roboto';
+    --cor-principal: #003049;
+    --cor-escuro: #D62828;
+    --cor-claro: #F77F00;
+    --cor-mais-claro: #FCBF49;
+    --branco: #fff;
+    --backgroud: #EAE2B7;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:var(--font-principal);
+    background-color: var(--cor-principal);
+    color: var(--branco);
+}
+
+.profile-box{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.profile{
+    width: 140px; /* Defina a largura desejada para a imagem */
+    height: 140px; /* Defina a altura desejada para a imagem */
+    border-radius: 50%; /* Define o raio de borda como 50% para criar uma forma de círculo */
+    object-fit: cover; /* Faz com que a imagem preencha o espaço definido sem distorção */
+    border: 2px solid var(--cor-mais-claro);
+}
+
+.nome{
+    color: var(--branco);
+    text-align: center;
+}
+
+.barra{
+    border: 1px solid white;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.informacoes-principais{
+    margin: 0 1rem;
+}
+
+.titulo-informacoes{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.2rem;   
+}
+
+.texto-informacoes{
+    margin: 1rem 1rem;
+    font-size: 1.1rem;
+}
+
+.botao{
+    color: var(--branco);
+    font-weight: bold;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--cor-claro);
+    font-family: var(--font-principal);
+    padding: 0.5rem 2rem;
+}
+
+.botao:hover{
+    background-color: var(--cor-escuro);
+}
+
+

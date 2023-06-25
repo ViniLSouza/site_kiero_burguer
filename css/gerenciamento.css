@@ -117,6 +117,9 @@ body{
     }
 }
 
-.caixa-gerenciamento, .caixa-pedido, .opcoes, .escolher-tempo, .nivel-processo{
-    margin: 3rem 20rem;
+@media screen and (min-width: 1440px){
+
+    .caixa-gerenciamento, .caixa-pedido, .opcoes, .escolher-tempo, .nivel-processo{
+        margin: 3rem 20rem;
+    }   
 }

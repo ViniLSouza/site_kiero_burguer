@@ -46,6 +46,7 @@ header {
 }
 
 .botaoLogin {
+    display: none;
     text-align: end;
     margin-right: 2em;
 }
@@ -68,6 +69,16 @@ header {
 
 .login:active {
     background-color: #FCBF49;
+}
+
+.profile{
+    width: 60px; /* Defina a largura desejada para a imagem */
+    height: 60px; /* Defina a altura desejada para a imagem */
+    border-radius: 50%; /* Define o raio de borda como 50% para criar uma forma de círculo */
+    object-fit: cover; /* Faz com que a imagem preencha o espaço definido sem distorção */
+    border: 2px solid var(--cor-mais-claro);
+    float: right;
+    margin-right: 2rem;
 }
 
 @media screen and (max-width: 700px){
@@ -103,4 +114,15 @@ header {
         font-size: 15px;
         border-radius: 0 0 10px 10px;
     }
+
+    .profile-header{
+        display: none;
+    }
+
+    .botaoLogin{
+        display: block;
+    }
 }
+
+/* adicionando perfil */
+
