@@ -61,3 +61,11 @@ body{
         font-size: 2rem;
     }
 }
+
+@media screen and (min-width: 1440px){
+
+    .caixa-pedido{
+        margin: 3rem 20rem;
+    }
+
+}

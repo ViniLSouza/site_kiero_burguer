@@ -116,3 +116,7 @@ body{
         font-size: 1.4rem;
     }
 }
+
+.caixa-gerenciamento, .caixa-pedido, .opcoes, .escolher-tempo, .nivel-processo{
+    margin: 3rem 20rem;
+}
