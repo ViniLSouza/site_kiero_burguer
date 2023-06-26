@@ -71,7 +71,7 @@ header {
     background-color: #FCBF49;
 }
 
-.profile{
+.profile-header{
     width: 60px; /* Defina a largura desejada para a imagem */
     height: 60px; /* Defina a altura desejada para a imagem */
     border-radius: 50%; /* Define o raio de borda como 50% para criar uma forma de círculo */
