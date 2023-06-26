@@ -84,7 +84,7 @@ body{
 
 .pedido-detalhes, .endereco-entrega{
     background-color: var(--backgroud);
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     padding: 1rem;
 }
 
