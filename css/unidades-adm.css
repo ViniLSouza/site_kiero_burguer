@@ -15,10 +15,11 @@
 }
 
 input {
-    width: 10%;
+    width: 70px;
     font-size: large;
     padding: 1%;
     box-sizing: border-box;
+    margin-left: 15px;
     color: white;
     background-color: var(--cor-principal);
     border-radius: 5px;
