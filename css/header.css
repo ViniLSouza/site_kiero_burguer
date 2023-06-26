@@ -106,7 +106,7 @@ header {
         font-size: 15px;
     }
 
-    .botaoLogin {
+    .botaoLogin,.botaoLogin-home {
         grid-row: 2;
         text-align: end;
         margin-right: 0;
