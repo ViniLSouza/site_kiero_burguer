@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="../css/definicoes.css">
     <title>Definições</title>
 </head>
@@ -30,73 +29,69 @@
 
     </header>
 
-    <div class="container">
+    <div class="container d-flex flex-dir-c">
 
-        <div class="titulo-pagina">
+        <div class="titulo-pagina d-flex just-cont-c">
             <h1>DEFINIÇÕES</h1>
         </div>
 
-        <section class="cores">
+        <section class="cores d-flex just-cont-c">
 
+          <div class="container-cores">
             <div class="titulo-cores">
-                <h2>Paleta de cores do site</h2>
+              <h2>Paleta de cores do site</h2>
             </div>
 
-            <div class="opcoes-cores">
+            <div class="opcoes-cores d-flex just-cont-sp">
 
-                <div class="box-cor">
+              <div class="box-cor">
 
-                    <h3>Cor principal</h3>
-                    <div class="cor"></div>
+                  <h3>Cor principal</h3>
+                  <div class="cor-p"></div>
 
-                </div>
+              </div>
 
-                <div class="box-cor">
+              <div class="box-cor">
 
-                    <h3>Cor escura</h3>
+                  <h3>Cor escura</h3>
 
-                    <div class="cor"></div>
-                    
-                </div>
+                  <div class="cor-e"></div>
+                  
+              </div>
 
-                <div class="box-cor">
+              <div class="box-cor">
 
-                    <h3>Cor clara 1</h3>
-                    <div class="cor"></div>
-                    
-                </div>
+                  <h3>Cor clara 1</h3>
+                  <div class="cor-c1"></div>
+                  
+              </div>
 
-                <div class="box-cor">
+              <div class="box-cor">
 
-                    <h3>Cor clara 2</h3>
-                    <div class="cor"></div>
-                    
-                </div>
+                  <h3>Cor clara 2</h3>
+                  <div class="cor-c2"></div>
+                  
+              </div>
 
-                <div class="box-cor">
+              <div class="box-cor">
 
-                    <h3>Cor clara 3</h3>
-                    <div class="cor"></div>
-                    
-                </div>
-
+                  <h3>Cor clara 3</h3>
+                  <div class="cor-c3"></div>
+                  
+              </div>
             </div>
+          </div>
 
         </section>
 
-        <section class="horario">
-
-            <div class="titulo-horario">
-                <h2>Horário de funcionamento</h2>
-            </div>
+        <section class="horario height_auto d-flex just-cont-c">
 
             <div class="container-horario">
-                <form class="formulariocadastro height_auto d-flex flex-dir-c align-center">
-                  <h1 class="formtitle height_auto">CRIE SUA CONTA</h1>
-              
-                  <div class="titulo-horario height_auto">
-                    <h2>Informe os dias e horários de funcionamento do restaurante</h2>
-                  </div>
+              <div class="titulo-horario">
+                <h2>Horário de funcionamento</h2>
+              </div> 
+
+                <form class="formulariohorario height_auto d-flex flex-dir-c align-center">
               
                   <div class="box height_auto d-flex just-cont-sp">
                     <div class="hor height_auto d-flex flex-dir-c align-center">
@@ -219,14 +214,32 @@
               
                   <div class="buttons height_auto d-flex just-cont-sp">
                     <input type="reset" value="LIMPAR" class="button-1">
-                    <a href="cadastro-restaurante-2.html" class="a-button-2">
-                      <button type="button" class="button-2">PRÓXIMO</button>
-                    </a>
+                    <input type="button" class="button-2" value="SALVAR">
 
                   </div>
                 </form>
               </div>      
         </section>
-    </div>
+        
+        <section class="dados">
+          <div class="container-dados">
+            <h2>Dados</h2>
+          </div>
+        </section>
+
+         <!-- rodapé da pagina -->
+    <footer class="rodape">
+      <div></div>
+      <div class="local-ajuda">
+          <h1 class="titulo-ajuda">Precisa de ajuda com seu pedido?</h1>
+          <p class="texto-ajuda">Email: KieroBurguer@gmail.com</p>
+          <p class="texto-ajuda">Telefone: (41) 9-9999-9999</p>
+      </div>
+
+      <div class="desenvolvedores">
+          <h1 class="titulo-desenvolvedores">Desenvolvido por</h1>
+          <p class="nomes">&copy; Kiero Burguer Development 2023</p>
+      </div>
+    </footer>
 </body>
 </html>

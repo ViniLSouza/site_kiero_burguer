@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap%27');
+:root {
+    --font-principal: 'Roboto';
+    --cor-principal: #003049;
+    --cor-escuro: #D62828;
+    --cor-claro: #F77F00;
+    --cor-mais-claro: #FCBF49;
+    --branco: #fff;
+    --backgroud: #EAE2B7;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 10%;
+    font-size: large;
+    padding: 1%;
+    box-sizing: border-box;
+    color: white;
+    background-color: var(--cor-principal);
+    border-radius: 5px;
+    border: none;
+}
+
+input:hover {
+    background-color: var(--cor-claro);
+}

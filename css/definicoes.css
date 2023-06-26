@@ -1,23 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap%27');
+:root {
+    --font-principal: 'Roboto';
+    --cor-principal: #003049;
+    --cor-escuro: #D62828;
+    --cor-claro: #F77F00;
+    --cor-mais-claro: #FCBF49;
+    --branco: #fff;
+    --backgroud: #EAE2B7;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-principal), sans-serif; 
+    background-color: var(--cor-mais-claro);
+}
+
+.height_auto {
+    height: auto;
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-dir-c {
+    flex-direction: column;
+}
+
+.just-cont-c {
+    justify-content: center;
+}
+
+.just-cont-sp {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.container { 
+    width: 100%;
+    padding-top: 2%;
+}
+
+.titulo-pagina {
+    width: 100%;
+}
+
+.horario, .cores {
+    width: 100%;
+    margin-top: 1%;
+}
+
+.opcoes-cores {
+    width: 100%;
+    background-color: var(--backgroud);
+    border-radius: 15px;
+}
+
+h2 {
+    color: var(--cor-principal);
+    text-align: center;
+}
+
+.container-horario, .container-cores {
+    width: 50%;
+    background-color: var(--backgroud);
+    border-radius: 15px;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.titulo-horario, .titulo-cores {
+    width: 100%;
+}
+
+.opcoes-cores {
+    width: 100%;
+    margin-top: 1%;
+}
+
+.box-cor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cor-p, .cor-e, .cor-c1, .cor-c2, .cor-c3 {
+    width: 30px;
+    height: 30px;
+    border: solid 2px black;
+}
+
+.cor-p {
+    background-color: var(--cor-principal);
+}
+
+.cor-e {
+    background-color: var(--cor-escuro);
+}
+
+.cor-c1 {
+    background-color: var(--cor-claro);
+}
+
+.cor-c2 {
+    background-color: var(--cor-mais-claro);
+}
+
+.cor-c3 {
+    background-color: var(--backgroud);
+}
+
+.formulariohorario {
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.hor {
+    width: 30%;
+    padding: 1%;
+}
+
+label {
+    width: 100%;
+    font-size: medium;
+    color: black;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    font-size: medium;
+    text-align: center;
+    border: solid 3px var(--cor-principal);
+    border-radius: 5px;
+    margin-bottom: 1%;
+}
+
+.buttons {
+    width: 60%;
+    margin-top: 1%;
+}
+
 .button-1 {
     width: 40%;
     padding: 1%;
     border: none;
-    background-color: var(--cor-escuro);
+    background-color: var(--cor-principal);
     color: var(--branco);
     font-size: medium;
     text-align: center;
     border-radius: 5px;
 }
 
-.a-button-2 {
-    width: 40%;
-}
-
 .button-2 {
-    width: 100%;
-    padding: 2.5%;
+    width: 40%;
+    padding: 1%;
     border: none;
-    background-color: var(--cor-escuro);
+    background-color: var(--cor-principal);
     color: var(--branco);
     font-size: medium;
     text-align: center;
@@ -28,34 +179,6 @@
     background-color: var(--cor-claro);
 }
 
-.imagembox {
-    display: none;
-}
-
-.formulariocadastro {
-    width: 100%;
-}
-
-.cadastro {
-    width: 70%;
-}
-
-.titulo-horario {
-    width: 80%;
-    color:  #EAE2B7;
-    font-size: small;
-    padding: 1%;
-    text-align: center;
-}
-
-.box {
-    width: 90%;
-}
-
-.hor {
-    width: 30%;
-    padding: 1%;
-}
 @media screen and (max-width: 1100px) {
    
    .cadastro {
