@@ -45,6 +45,10 @@ header {
     color: #FCBF49;
 }
 
+.botaoLogin-home{
+    text-align: end;
+    margin-right: 2em;
+}
 .botaoLogin {
     display: none;
     text-align: end;
