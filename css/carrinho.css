@@ -35,3 +35,11 @@ body {
     width: 10%;
     margin-right: 100px;
 }
+
+.quantidade {
+    display: flex;
+}
+
+.delete {
+    width: 30px;
+}
