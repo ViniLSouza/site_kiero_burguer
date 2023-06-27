@@ -4,40 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/definicoes.css">
     <link rel="icon" href="../_imagens/favicon.png">
     <title>Definições</title>
 </head>
-
-<body>
-  <style>
-    .rodape{
-    width: 100%;
-    background-color: #003049;
-    color: white;
-    margin-top: 2%;
-}
-
-.titulo-ajuda, .titulo-desenvolvedores{
-    font-size: 1.3rem;
-    margin: 1rem 0rem;
-    display: flex;
-    
-}
-
-.texto-ajuda, .nomes{
-    padding-bottom: 0.5rem;
-    justify-content: center;
-}
-
-@media screen and (min-width: 1320px){
-    .rodape{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        justify-content: center;
-    }
-}
-  </style>
 
     <header>
 
@@ -50,10 +21,6 @@
             <li class="lista"><a href="cardapio.html" class="lista_nav">CARDÁPIO</a></li>
             <li class="lista"><a href="definicoes.html" class="lista_nav">DEFINIÇÕES</a></li>
         </ul>
-
-        <div class="botaoLogin">
-            <a href="opcoes-login.html"><button type="button" class="login">LOGIN</button></a>
-        </div>
 
     </header>
 
@@ -240,9 +207,8 @@
                     </div>
                   </div>
               
-                  <div class="buttons height_auto d-flex just-cont-sp">
-                    <input type="reset" value="LIMPAR" class="button-1">
-                    <input type="button" class="button-2" value="SALVAR">
+                  <div class="buttons height_auto d-flex just-cont-c">
+                    <input type="button" class="button-2" value="EDITAR">
 
                   </div>
                 </form>
@@ -302,7 +268,10 @@
             <div class="buttons height_auto d-flex just-cont-c">
                 <input type="reset" value="EDITAR" class="button-1">
             </div>
-        </form>
+          </form>
+        </section>
+        <section class="logout d-flex just-cont-c align-center">
+          <a href="../opcoes-login.html"><img src="../_imagens/icons8-exportar-48.png"><h2>Sair</h2></a>
         </section>
       </div>
                  <!-- rodapé da pagina -->
