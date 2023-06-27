@@ -15,7 +15,6 @@ body {
     background-image: url(../_imagens/restaurante_resized.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 *{
@@ -56,7 +55,7 @@ main {
 
 .background {
     width: 100%;
-    padding: 9%;
+    padding: 8rem;
     box-sizing: border-box;
     background-image: url(../_imagens/restaurante_resized.jpg);
     background-size: cover;
@@ -85,6 +84,10 @@ main {
     border: none;
 }
 
+.button-c:hover {
+    background-color: var(--cor-mais-claro);
+}
+
 .button-r {
     width: 90%;
     padding: 3%;
@@ -98,7 +101,6 @@ main {
 .box a{
     color: #000000;
 }
-
 
 /*LOGIN*/
 .container {
@@ -139,7 +141,7 @@ input[type="submit"] {
     text-transform: uppercase;    
 }
   
-input[type="submit"]:hover {
+input[type="submit"]:hover, .button-r:hover {
     background-color: var(--cor-claro);
 }
 
