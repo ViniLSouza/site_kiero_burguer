@@ -8,19 +8,20 @@
     --backgroud: #EAE2B7;
 
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     font-family: var(--font-principal), sans-serif;
     background-image: url(../_imagens/restaurante_resized.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
 *{
     margin: 0;
     padding: 0;
 }
+
 
 .height_auto {
     height: auto;

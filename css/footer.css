@@ -1,11 +1,16 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
 .rodape{
+    left: 0;
+    bottom: 0;
     width: 100%;
-    display: grid;
-    justify-content: center;
     background-color: #003049;
     color: white;
-    position: absolute;
-  
+    padding: 20px;
+    text-align: center;
 }
 
 .titulo-ajuda, .titulo-desenvolvedores{
