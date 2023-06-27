@@ -1,0 +1,19 @@
+body {
+    background-color: #F77F00;
+    width: 100%;
+}
+
+.titulo {
+    text-align: center;
+    padding-block: 1em;
+    color: #F77F00;
+}
+
+.container {
+    display: grid;
+    
+    background-color: #003049;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
