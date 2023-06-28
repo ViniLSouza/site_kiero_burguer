@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="./_imagens/favicon.png">
     <title>Login</title>
+    <style>
+           .recaptcha-message {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+    <script>
+        function onSubmit(token) {
+            // Lógica para processar o token retornado pelo reCAPTCHA
+            console.log(token);
+            // Aqui você pode fazer as ações necessárias, como enviar o formulário ou executar outras tarefas.
+            // Certifique-se de adicionar a lógica adequada para processar o token.
+        }
+    </script>
 </head>
 
 <body>
@@ -25,18 +45,23 @@
     </header>
 
     <section class="container">
-        
-            <h2>LOGIN ADMNISTRADOR</h2>
-            <form>
-                <input type="text" placeholder="Usuário" required>
-                <input type="password" placeholder="Senha" required>
-                <div class="box_botao">
-                    <a class="botaocadastro" href="adm/index-adm.html">Entrar</a>
-                    <a class="botaocadastro" href="cadastro-restaurante.html">Cadastre-se</a>
-                </div>
-            </form>
-        
+        <h2>LOGIN ADMNISTRADOR</h2>
+        <form id="login-form">
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <div class="box_botao">
+                <input type="submit" value="Entrar" class="botaocadastro">
+                <a class="botaocadastro" href="cadastro.html">Cadastre-se</a>
+            </div>
+        </form>
+        <div class="ui divider"></div>
+        <p><a href="/ead/account/reset/" class="forgot-password-link">Esqueceu sua senha?</a></p>
     </section>
+    <style>
+        .forgot-password-link {
+            color: red;
+        }
+    </style>
 
     <!-- Pelo amor de deus n apaga isso. Resumo: esse main esta ai para criar um espaçamento entre a caixa de login e o footer -->
     <main></main>
