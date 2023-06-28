@@ -22,7 +22,7 @@ body{
     color: var(--cor-claro);
 }
 
-
+/* descrição do lanche */
 
 .itens-compra{
     display: block;
@@ -51,13 +51,13 @@ body{
     padding: 1rem 0rem;
     margin: 1rem 6rem;
 }
-
+/* Barrinha decorativa para dividar o conteudo */
 .barra{
     border: 1px solid var(--cor-claro);
     width: 100%;
     margin: 2rem 0;
 }
-
+/* Estilo dos bõtoes de continuar comprando e finalizar compra */
 .botoes-compra{
     display: flex;
     margin: 3rem 0;
@@ -76,7 +76,7 @@ body{
     border-radius: 0.5rem;
 }
 
-/* teste */
+/* parte feita pelo gpeto */
 
   
 .quantity-container {
