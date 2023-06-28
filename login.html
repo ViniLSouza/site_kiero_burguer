@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="./_imagens/favicon.png">
     <title>Login</title>
+    <style>
+           .recaptcha-message {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+    <script>
+        function onSubmit(token) {
+            // Lógica para processar o token retornado pelo reCAPTCHA
+            console.log(token);
+            // Aqui você pode fazer as ações necessárias, como enviar o formulário ou executar outras tarefas.
+            // Certifique-se de adicionar a lógica adequada para processar o token.
+        }
+    </script>
 </head>
 
 <body>
@@ -25,19 +45,23 @@
     </header>
 
     <section class="container">
-        
-            <h2>LOGIN CLIENTE</h2>
-            <form>
-                <input type="text" placeholder="Usuário" required>
-                <input type="password" placeholder="Senha" required>
-                <div class="box_botao">
-                    <input type="submit" value="Entrar" class="botaocadastro">
-                    <a class="botaocadastro" href="cadastro.html">Cadastre-se</a>
-                </div>
-            </form>
-        
+        <h2>LOGIN CLIENTE</h2>
+        <form id="login-form">
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <div class="box_botao">
+                <input type="submit" value="Entrar" class="botaocadastro">
+                <a class="botaocadastro" href="cadastro.html">Cadastre-se</a>
+            </div>
+        </form>
+        <div class="ui divider"></div>
+        <p><a href="/ead/account/reset/" class="forgot-password-link">Esqueceu sua senha?</a></p>
     </section>
-
+    <style>
+        .forgot-password-link {
+            color: red;
+        }
+    </style>
     <footer class="rodape">
         <div></div>
         <div class="local-ajuda">
@@ -51,5 +75,18 @@
             <p class="nomes">&copy; Kiero Burguer Development 2023</p>
         </div>
     </footer>
+
+    <div class="recaptcha-message">Este site está protegido pelo reCAPTCHA.</div>
+
+    <script>
+        // Renderizar o reCAPTCHA v3 no formulário de login
+        grecaptcha.ready(function() {
+            grecaptcha.execute('reCAPTCHA_site_key', { action: 'submit' }).then(function(token) {
+                // Enviar o token para a função onSubmit
+                onSubmit(token);
+            });
+        });
+    </script>
 </body>
 </html>
+
