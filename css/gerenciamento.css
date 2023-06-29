@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif ;
+}
+
+:root{
+    --cor-titulo:#454343;
+    --cor-botão: #fff;
+    --cor-escuro: #D62828;
+    --cor-claro: #F77F00;
+    --cor-mais-claro: #FCBF49;
+    --branco: #fff;
+    --backgroud: #EAE2B7;
+    --verde: rgb(5, 152, 5);
+
+}
+
+body{
+    background-color: var(--cor-mais-claro);
+}
+
+.caixa-gerenciamento, .caixa-pedido, .opcoes, .escolher-tempo, .nivel-processo{
+    background-color: var(--backgroud);
+    margin: 2rem 10px 0 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.titulo-itens, .titulo{
+    font-size: 22px;
+    padding: 5px 0;
+}
+
+.itens{
+    color: var(--cor-titulo);
+}
+
+.detalhe-pedido{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.aceitar, .avancar{
+    background-color: var(--verde);
+}
+
+.recusar{
+    background-color: var(--cor-escuro);
+}
+
+/* ********************************PEDIDO ACEITO*********************************** */
+.container-tempo{
+    margin-top: 20vh;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.escolha-tempo{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.botoes, .opcoes, .niveis{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* **********************************NIVEL DE PROCESSO DO PEDIDO**************************************** */
+
+.titulo-processo, .avancar{
+    display: flex;
+    justify-content: center;
+}
+
+.niveis{
+    margin-top: 1rem;
+}
+
+.texto-nivel{
+    font-size: 14px;
+    color: var(--cor-titulo);
+}
+
+.nivel-atual{
+    font-size: 18px;
+    color: var(--cor-claro);
+}
+
+@media screen and (min-width: 720px) {
+    .container-gerenciamento{
+        margin: 3rem 6rem;
+    }
+    .nome, .horario, .numero-pedido, .telefone, .endereco, .titulo-itens, .botao, .nivel-atual{
+        font-size: 1.5rem;
+    }
+
+    .itens, .texto-nivel{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    .caixa-gerenciamento, .caixa-pedido, .opcoes, .escolher-tempo, .nivel-processo{
+        margin: 3rem 20rem;
+    }   
+}

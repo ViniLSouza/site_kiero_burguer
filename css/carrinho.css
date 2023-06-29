@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif ;
+}
+
+:root{
+    --cor-titulo:#2d2c2c;
+    --cor-botão: #fff;
+    --cor-escuro: #D62828;
+    --cor-claro: #F77F00;
+    --cor-mais-claro: #FCBF49;
+    --branco: #fff;
+    --backgroud: #EAE2B7;
+
+}
+
+body{
+    background-color: var(--cor-claro);
+    color: var(--cor-claro);
+}
+
+/* descrição do lanche */
+
+.itens-compra{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor-titulo);
+    padding: 4rem 0;
+}
+
+.itens{
+    margin: 3rem 0;
+}
+
+.imagem{
+    width: 15rem;
+}
+
+.descricao-item{
+    margin: 1rem 2rem;
+}
+
+.preco-item{
+    margin: 2rem 0;
+    color: white;
+    border: 2px solid var(--cor-claro);
+    padding: 1rem 0rem;
+    margin: 1rem 6rem;
+}
+/* Barrinha decorativa para dividar o conteudo */
+.barra{
+    border: 1px solid var(--cor-claro);
+    width: 100%;
+    margin: 2rem 0;
+}
+/* Estilo dos bõtoes de continuar comprando e finalizar compra */
+.botoes-compra{
+    display: flex;
+    margin: 3rem 0;
+    justify-content: center;
+}
+
+.botao-compra{
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+    padding: 0.7rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--cor-claro);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* parte feita pelo gpeto */
+
+  
+.quantity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 1rem;
+  }
+
+  .texto-quantidade{
+    margin-right: 2rem;
+  }
+  
+  .label-container {
+    font-weight: bold;
+  }
+  
+  .input-container {
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="number"] {
+    width: 50px;
+    padding: 5px;
+  }
+  
+.botao-quantidade {
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+  }
+  
+  .botao-quantidade:hover {
+    opacity: 0.8;
+  }
+  
+  #message {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 1320px){
+    .preco-item{
+        border: none;
+    }
+  }

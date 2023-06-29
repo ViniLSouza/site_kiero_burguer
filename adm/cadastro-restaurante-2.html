@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="icon" href="../_imagens/favicon.png">
+    <title>Cadastro restaurante-2</title>
+</head>
+<style>
+    /*botoes cadastro-restaurante*/
+.button-1 {
+    width: 40%;
+    padding: 1%;
+    border: none;
+    background-color: var(--cor-escuro);
+    color: var(--branco);
+    font-size: medium;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.a-button-2 {
+    width: 40%;
+}
+
+.button-2 {
+    width: 100%;
+    padding: 2.5%;
+    border: none;
+    background-color: var(--cor-escuro);
+    color: var(--branco);
+    font-size: medium;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button-1:hover, .button-2:hover {
+    background-color: var(--cor-claro);
+}
+
+.imagembox {
+    display: none;
+}
+
+.formulariocadastro {
+    width: 100%;
+}
+
+.cadastro {
+    width: 70%;
+}
+
+.titulo-horario {
+    width: 80%;
+    color:  #EAE2B7;
+    font-size: small;
+    padding: 1%;
+    text-align: center;
+}
+
+.box {
+    width: 90%;
+}
+
+.hor {
+    width: 30%;
+    padding: 1%;
+}
+@media screen and (max-width: 1100px) {
+   
+   .cadastro {
+    width: 90%;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   
+   .cadastro {
+        width: 95%;
+        margin-top: 10%;
+        flex-direction: row;
+   }
+   .box {
+        flex-direction: column;
+        width: 90%;
+        padding: 2%;
+   }
+   .hor {
+        width: 100%;
+   }
+}
+</style>
+<body>
+    <header>
+        <a href="index.html"><img src="_imagens/logo.png" class="logo"></a>
+        <ul class="nav">
+            <li class="lista"><a href="index.html" class="lista_nav">HOME</a></li>
+            <li class="lista"><a href="pedidos.html" class="lista_nav">PEDIDOS</a></li>
+            <li class="lista"><a href="unidades.html" class="lista_nav">UNIDADES</a></li>
+        </ul>
+        <div class="botaoLogin">
+            <a href="../login.html"><button type="button" class="login">LOGIN</button></a>
+            <a href="login.html"><button type="button" class="login">LOGIN</button></a>
+        </div>
+    </header>
+
+    <div class="container height_auto d-flex just-cont-c">
+        <div class="cadastro height_auto d-flex">
+            <form class="formulariocadastro height_auto d-flex flex-dir-c align-center">
+                <h1 class="formtitle height_auto">CRIE SUA CONTA</h1>
+
+                <div class="titulo-horario height_auto">
+                    <h2>Informe os dias e horários de funcionamento do restaurante</h2>
+                </div>
+
+                <div class="box height_auto d-flex just-cont-sp">
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Segunda:</label>
+                        <input type="text" placeholder="Aberto/Fechado">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de abertura:</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de fechamento:</label>
+                        <input type="time">
+                    </div>
+
+                </div>
+
+                <div class="box height_auto d-flex just-cont-sp">
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Terça:</label>
+                        <input type="text" placeholder="Aberto/Fechado">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de abertura:</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de fechamento:</label>
+                        <input type="time">
+                    </div>
+                    
+                </div>
+
+                <div class="box height_auto d-flex just-cont-sp">
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Quarta:</label>
+                        <input type="text" placeholder="Aberto/Fechado">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de abertura:</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de fechamento:</label>
+                        <input type="time">
+                    </div>
+                    
+                </div>
+
+                <div class="box height_auto d-flex just-cont-sp">
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Quinta:</label>
+                        <input type="text" placeholder="Aberto/Fechado">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de abertura:</label>
+                        <input type="time" placeholder="Aberto/Fechado">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de fechamento:</label>
+                        <input type="time">
+                    </div>
+                    
+                </div>
+
+                <div class="box height_auto d-flex just-cont-sp">
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Sexta:</label>
+                        <input type="text" placeholder="Aberto/Fechado">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de abertura:</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de fechamento:</label>
+                        <input type="time">
+                    </div>
+                    
+                </div>
+
+                <div class="box height_auto d-flex just-cont-sp">
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Sábado:</label>
+                        <input type="text" placeholder="Aberto/Fechado">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de abertura:</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de fechamento:</label>
+                        <input type="time">
+                    </div>
+                    
+                </div>
+
+                <div class="box height_auto d-flex just-cont-sp">
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Domingo:</label>
+                        <input type="text" placeholder="Aberto/Fechado">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de abertura:</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="hor height_auto d-flex flex-dir-c align-center">
+                        <label>Hora de fechamento:</label>
+                        <input type="time">
+                    </div>
+                    
+                </div>
+
+                <div class="buttons height_auto d-flex just-cont-sp">
+                    <input type="reset" value="LIMPAR" class="button-1">
+                    <a href="cadastro-restaurante-2.html" class="a-button-2"><button type="button" class="button-2">PRÓXIMO</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- rodapé da pagina -->
+    <footer class="rodape">
+        <div></div>
+        <div class="local-ajuda">
+            <h1 class="titulo-ajuda">Precisa de ajuda com seu pedido?</h1>
+            <p class="texto-ajuda">Email: KieroBurguer@gmail.com</p>
+            <p class="texto-ajuda">Telefone: (41) 9-9999-9999</p>
+        </div>
+
+        <div class="desenvolvedores">
+            <h1 class="titulo-desenvolvedores">Desenvolvido por</h1>
+            <p class="nomes">&copy; Kiero Burguer Development 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -50,10 +50,26 @@ body {
     align-items: center;
 }
 
+.perfil {
+    width: 50px;
+    border-radius: 100%;
+}
+
 .seta {
     grid-column: 1;
     width: 80%;
     transform: rotate(180deg);
+}
+
+.coment_text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+.text {
+    margin-inline: 10px;
 }
 
 .seta2 {
@@ -75,7 +91,6 @@ body {
 
 .titulo {
     color: #F77F00;
-    font-size: 50px;
 }
 
 .lanches {
@@ -169,6 +184,10 @@ body {
     .barraComent {
         height: 6em;
     }
+
+    .text {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -207,6 +226,16 @@ body {
 
     .barraComent {
         margin-top: 21em;
+        grid-template-columns: 4% 92% 4%;
+    }
+
+    .seta2 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .text_mulher {
+        display: none;
     }
 
     .burgers {
@@ -230,12 +259,21 @@ body {
         bottom: 30%;
     }
 
+    .perfil {
+        width:30px;
+    }
+
+    .text {
+        font-size: 11px;
+    }
+
     .lanche {
         width: 60%;
     }
 
     .comprar {
         width: 60%;
+        font-size: 15px;
     }
 
     .textoLanche {

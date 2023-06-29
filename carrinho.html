@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="icon" href="./_imagens/favicon.png">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Carrinho</title>
+</head>
+<body>
+    <header>
+
+        <a href="index.html"><img src="_imagens/logo.png" class="logo"></a>
+
+        <ul class="nav">
+            <li class="lista"><a href="index.html" class="lista_nav">HOME</a></li>
+            <li class="lista"><a href="pedidos.html" class="lista_nav">PEDIDOS</a></li>
+            <li class="lista"><a href="unidades.html" class="lista_nav">UNIDADES</a></li>
+        </ul>
+
+        <div class="botaoLogin-home">
+            <a href="opcoes-login.html"><button type="button" class="login">LOGIN</button></a>
+        </div>
+
+    </header>
+
+    <section class="container">
+
+        <div class="itens-compra">
+            <!-- parte aonde contem a descrição do lanche e a imagem -->
+            <img class="imagem" src="_imagens/burger_1_resized.png" alt="imagem do hamburguer Dream Cheese">
+            <div class="itens">
+                <h1 class="titulo-item">Dream Cheese</h1>
+                <p class="descricao-item">Pão riviera, hamburger de costela, queijo cheddar, bacon, alface, tomate e creamcheese</p>
+                <h2 class="preco-item">R$23,90</h2>
+            </div>
+
+            <!-- Essa parte foi feita pelo gpeto, ela é aquela parte que mostra a quantidade de itens e dois botões um de + e o ou de - para pessoa diminuir ou aumentar a quantiade de itens -->
+            <div class="quantity-container">
+                <label class="texto-quantidade" for="quantity">Quantidade: </label>
+                <div class="input-container">
+                  <input type="number" id="quantity" min="1" value="1" oninput="updateQuantity()" />
+                  <button class="botao-quantidade" onclick="incrementQuantity()">+</button>
+                  <button class="botao-quantidade" onclick="decrementQuantity()">-</button>
+                </div>
+            </div>
+            <div id="message"></div>
+
+
+            <div id="message"></div>
+            <!-- Barrinha decorativa -->
+            <div class="barra"></div>
+            <!-- Botões de compra -->
+            <div class="botoes-compra">
+                <a href="index.html" class="botao-compra">Continuar Comprando</a>
+                <a href="tipo-pagamento.html" class="botao-compra">Finalizar Compra</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="rodape">
+        <div></div>
+        <div class="local-ajuda">
+            <h1 class="titulo-ajuda">Precisa de ajuda com seu pedido?</h1>
+            <p class="texto-ajuda">Email: KieroBurguer@gmail.com</p>
+            <p class="texto-ajuda">Telefone: (41) 9-9999-9999</p>
+        </div>
+        
+        <div class="desenvolvedores">
+            <h1 class="titulo-desenvolvedores">Desenvolvido por</h1>
+            <p class="nomes">&copy; Kiero Burguer Development 2023</p>
+
+        </div>
+        
+
+    </footer>
+
+    <script src="botao.js"></script>
+</body>
+</html>

@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/cadastro.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="./_imagens/favicon.png">
-    <title>Cadastro</title>
+    <title>Cadastro restaurante</title>
 </head>
+<style>
+.container{
+    margin: 5rem 0;
+}
+    /*botoes cadastro-restaurante*/
+.button-1 {
+    width: 40%;
+    padding: 1%;
+    border: none;
+    background-color: var(--cor-escuro);
+    color: var(--branco);
+    font-size: medium;
+    text-align: center;
+    border-radius: 5px;
+}
 
+.a-button-2 {
+    width: 40%;
+}
+
+.button-2 {
+    width: 100%;
+    padding: 2.5%;
+    border: none;
+    background-color: var(--cor-escuro);
+    color: var(--branco);
+    font-size: medium;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button-1:hover, .button-2:hover {
+    background-color: var(--cor-claro);
+}
+
+.imagembox {
+    display: none;
+}
+
+.formulariocadastro {
+    width: 100%;
+}
+
+.cadastro {
+    width: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+   
+   .cadastro {
+    width: 90%;
+   } 
+}
+</style>
 <body>
     <header>
         <a href="index.html"><img src="_imagens/logo.png" class="logo"></a>
@@ -31,7 +82,7 @@
                 <h1 class="formtitle height_auto">CRIE SUA CONTA</h1>
 
                 <div class="nome height_auto d-flex flex-dir-c align-center">
-                    <label>Digite seu nome completo:</label>
+                    <label>Digite o nome do seu restaurante:</label>
                     <input type="text" placeholder="Nome">
                 </div>
 
@@ -47,7 +98,7 @@
                     </div>
 
                     <div class="cep height_auto d-flex flex-dir-c align-center">
-                        <label>Digite seu CEP:</label>
+                        <label>Digite o CNPJ:</label>
                         <input type="text" placeholder="CEP" maxlength="8">
                     </div>
                 </div>
@@ -59,13 +110,13 @@
                     </div>
 
                     <div class="num height_auto d-flex flex-dir-c align-center">
-                        <label>Informe seu número de telefone:</label>
+                        <label>Informe o telefone do restaurante:</label>
                         <input type="text" placeholder="(00)0000-0000">
                     </div>
                 </div>
 
                 <div class="rua height_auto d-flex flex-dir-c align-center">
-                    <label>Informe o nome da rua:</label>
+                    <label>Informe o nome da rua em que está localizado o restaurante:</label>
                     <input type="text" placeholder="Rua">
                 </div>
 
@@ -98,17 +149,12 @@
                 </div>
 
                 <div class="buttons height_auto d-flex just-cont-sp">
-                    <input type="reset" value="LIMPAR" class="button2">
-                    <input type="submit" value="ENVIAR" class="button1">
+                    <input type="reset" value="LIMPAR" class="button-1">
+                    <a href="#" class="a-button-2"><button type="button" class="button-2">ENVIAR</button></a>
                 </div>
             </form>
-
-            <div class="imagembox height_auto d-flex just-cont-c align-center">
-                <img src="_imagens/hamburguer_resized.png" class="png">
-            </div>
         </div>
     </div>
-
     <!-- rodapé da pagina -->
     <footer class="rodape">
         <div></div>
@@ -124,5 +170,4 @@
         </div>
     </footer>
 </body>
-
 </html>

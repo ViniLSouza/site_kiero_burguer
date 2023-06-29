@@ -4,39 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/unidades.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="icon" href="./_imagens/favicon.png">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/unidades.css">
+    <link rel="stylesheet" href="../css/unidades-adm.css">
+    <link rel="stylesheet" href=".././css/footer.css">
+    <link rel="icon" href="../_imagens/favicon.png">
     <title>Unidades</title>
 </head>
 <body class="corpo">
     <header>
 
-        <a href="index.html"><img src="_imagens/logo.png" class="logo"></a>
+        <a href="../index.html"><img src="../_imagens/logo.png" class="logo"></a>
 
         <ul class="nav">
-            <li class="lista"><a href="index.html" class="lista_nav">HOME</a></li>
-            <li class="lista"><a href="pedidos.html" class="lista_nav">PEDIDOS</a></li>
-            <li class="lista"><a href="unidades.html" class="lista_nav">UNIDADES</a></li>
+            <li class="lista"><a href="index-adm.html" class="lista_nav">HOME</a></li>
+            <li class="lista"><a href="pedidos-restaurante.html" class="lista_nav">PEDIDOS</a></li>
+            <li class="lista"><a href="unidades-adm.html" class="lista_nav">UNIDADES</a></li>
+            <li class="lista"><a href="cardapio.html" class="lista_nav">CARDÁPIO</a></li>
+            <li class="lista"><a href="definicoes.html" class="lista_nav">DEFINIÇÕES</a></li>
         </ul>
-
-        <div class="profile-box">
-            <a href="perfil.html"><img src="_imagens/profile.jpg" class="profile-header" alt=""></a>
-        </div>
-        
-        <div class="botaoLogin">
-            <a href="perfil.html"><button type="button" class="login">PERFIL</button></a>
-        </div>
 
     </header>
     <div class="box">
         <section class="section-2">
             <div class="container-form">
-                <div class="mapa"> 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8405223734144!2d-49.271296825684125!3d-25.443594733427698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce55f637b1c71%3A0x4a1018a3817b6600!2sUniOpet%20Centro%20Universit%C3%A1rio!5e0!3m2!1spt-BR!2sbr!4v1686173784581!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                <h2 class="endereco">UNIDADES:</h2>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.848496202023!2d-49.2685796!3d-25.4433282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce4669f77a75f%3A0x8eafc3262c4394!2sAv.%20Pres.%20Get%C3%BAlio%20Vargas%2C%20892%20-%20Rebou%C3%A7as%2C%20Curitiba%20-%20PR%2C%2080230-030!5e0!3m2!1spt-BR!2sbr!4v1686368982282!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2 class="endereco">UNIDADES: <input type="button" value="Editar"></h2>
+
                     Av. Presidente Getúlio Vargas 892, Curitiba-PR
                     <br/>
                     (41)98862-6950
@@ -52,8 +46,8 @@
                     (41)99772-7286
                     <br/>
                 </h2>
-                    <h1 class="horario">HORÁRIOS:</h1>
-                    <table style="width:60%">
+                    <h1 class="horario">HORÁRIO:</h1>
+                    <table class="horarios" style="width:60%">
                         <tr>
                             <td>Domingo</td>
                             <td>18:00-00:00</td>
@@ -84,7 +78,8 @@
             </div>
         </section>
 
-        <h1 class="sobre-nos">SOBRE NÓS</h1>
+        <h1 class="sobre-nos">SOBRE NÓS <input type="button" value="Editar"></h1>
+
         <div class="texto">Bem-vindo(a) a Kiero Burguer, 
             <br/>
             Sabemos que um hambúrguer suculento e saboroso é uma verdadeira paixão para muitos. 
