@@ -28,7 +28,8 @@
     display: flex;
     font-weight: 400;
     color: var(--cor-claro);
-    margin-bottom: 1vh;
+    margin-top: 3rem;
+
 }
 .texto{
     padding: 1em;
@@ -38,6 +39,7 @@
     font-size: 22px;
 }
 .container-form{
+    text-align: center;
     padding: 1em;
     border: 2px solid var(--cor-escuro);
     border-radius: 10px;
@@ -45,18 +47,28 @@
     font-size: 22px;
     margin-top: 50px;
 }
+.mapa{
+    width: 100%;
+}
 .endereco{
+    justify-content: center;
     font-size: 28px;
     display: flex;
     font-weight: 400;
     color: var(--cor-claro);
 }
 .horario{
+    justify-content: center;
     font-size: 28px;
     display: flex;
     font-weight: 400;
     color: var(--cor-claro);
     margin-top: 70px;
+}
+.horarios{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 tr, td{
     padding: 1em;

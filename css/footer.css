@@ -1,0 +1,27 @@
+.rodape{
+    display: grid;
+    justify-content: center;
+    background-color: #003049;
+    margin-top: 2rem;
+    color: white; 
+}
+
+.titulo-ajuda, .titulo-desenvolvedores{
+    font-size: 1.3rem;
+    margin: 1rem 0rem;
+    display: flex;
+    
+}
+
+.texto-ajuda, .nomes{
+    padding-bottom: 0.5rem;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1320px){
+    .rodape{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        justify-content: center;
+    }
+}

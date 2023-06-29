@@ -24,7 +24,7 @@ body{
 .titulo-pedidos{
     text-align: center;
     font-size: 24px;
-    margin: 2vw 0;
+    margin: 5vw 0;
     color: #313030;
 
 }
@@ -112,4 +112,8 @@ body{
         margin: 2rem 20rem 0 20rem;
         padding: 1rem 1.5rem;
     } 
+
+    .titulo-pedidos{
+        margin: 3vw 0;
+    }
 }

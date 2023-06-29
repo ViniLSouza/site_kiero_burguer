@@ -14,12 +14,12 @@
 }
 body {
     font-family: var(--font-principal), sans-serif; 
-    
+    background-image: url(../_imagens/restaurante_resized.jpg);
 }
 .container { 
     width: 100%;
     height: auto;
-    background-image: url(../_imagens/restaurante.jpg);
+    
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4%;
