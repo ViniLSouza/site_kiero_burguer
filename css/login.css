@@ -72,6 +72,10 @@ body {
     border-radius: 15px;
 }
 
+.cadastro a {
+    color: var(--cor-mais-claro);
+}
+
 .button-c {
     width: 90%;
     padding: 3%;

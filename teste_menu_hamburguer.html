@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* Wrapper */
+        #hamnav {
+            width: 100%;
+            background-color: blue;
+            position: sticky;
+        }
+
+        /* Hide hamburguer */
+        #hamnav label, #hamburguer {
+            display: none;
+        }
+
+        /* Menu itens */
+        #hamitens {
+            display: flex;
+        }
+        #hamitens a {
+            width: 20%;
+            padding: 10px;
+            color: wheat;
+            text-decoration: none;
+            text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+            /* Show hamburguer */
+            #hamnav label {
+                display: inline-block;
+                color: wheat;
+                background: #a02620;
+                font-style: normal;
+                font-size: 1.2em;
+                padding: 10px;
+            }
+
+            /* Collapse menu items */
+            #hamitens a {
+                box-sizing: border-box;
+                display: block;
+                width: 100%;
+                border-top: 1px solid #333;
+            }
+
+            /* Toggle show/hide menu */
+            #hamitens {
+                display: none;
+            }
+            #hamnav input:checked ~ #hamitens {
+                display: block;
+            }
+        }
+    </style>
+
+    <nav id="hamnav">
+        <!-- Hamburguer -->
+        <label for="hamburguer">&#9776;</label>
+        <input type="checkbox" id="hamburguer"/>
+
+        <!-- Menu itens -->
+        <div id="hamitens">
+            <a href="index.html">HOME</a>
+            <a href="pedidos.html">PEDIDOS</a>
+            <a href="unidades.html">UNIDADES</a>
+            <a href="opcoes-login.html">LOGIN</a>
+        </div>
+    </nav>
+</body>
+</html>
