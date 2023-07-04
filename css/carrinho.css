@@ -125,6 +125,20 @@ body{
     font-weight: bold;
   }
 
+  .texto-tipo-pagamento {
+    font-size: 25px;
+    margin-bottom: 1em;
+  }
+
+  .tipos-pagamento {
+    display: flex;
+    justify-content: center;
+  }
+
+  .meios-pag {
+    margin-right: 3em;
+  }
+
   @media screen and (min-width: 1320px){
     .preco-item{
         border: none;

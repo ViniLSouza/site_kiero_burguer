@@ -42,16 +42,27 @@
                 <label class="texto-quantidade" for="quantity">Quantidade: </label>
                 <div class="input-container">
                   <input type="number" id="quantity" min="1" value="1" oninput="updateQuantity()" />
-                  <button class="botao-quantidade" onclick="incrementQuantity()">+</button>
                   <button class="botao-quantidade" onclick="decrementQuantity()">-</button>
+                  <button class="botao-quantidade" onclick="incrementQuantity()">+</button>
                 </div>
             </div>
             <div id="message"></div>
 
-
             <div id="message"></div>
             <!-- Barrinha decorativa -->
             <div class="barra"></div>
+
+            <p class="texto-tipo-pagamento">Selecione o meio de pagamento:</p>
+            <div>
+                  <div class="tipos-pagamento">
+                      <input type="radio" id="pix" name="meio-pagamento" value="pix">
+                      <label for="pix" class="meios-pag">PIX</label><br>
+                      <input type="radio" id="cartao" name="meio-pagamento" value="cartao">
+                      <label for="cartao" class="meios-pag">Cartão</label><br>
+                      <input type="radio" id="dinheiro" name="meio-pagamento" value="dinheiro">
+                      <label for="dinheiro">Dinheiro</label><br>                
+                  </div>
+            </div>
             <!-- Botões de compra -->
             <div class="botoes-compra">
                 <a href="index.html" class="botao-compra">Continuar Comprando</a>
