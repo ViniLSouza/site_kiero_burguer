@@ -53,9 +53,9 @@
 .endereco{
     justify-content: center;
     font-size: 28px;
-    display: flex;
     font-weight: 400;
     color: var(--cor-claro);
+    margin-bottom: 1em;
 }
 .horario{
     justify-content: center;

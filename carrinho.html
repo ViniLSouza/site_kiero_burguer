@@ -36,31 +36,76 @@
     <section class="container">
 
         <div class="itens-compra">
-            <!-- parte aonde contem a descrição do lanche e a imagem -->
-            <img class="imagem" src="_imagens/burger_1_resized.png" alt="imagem do hamburguer Dream Cheese">
-            <div class="itens">
-                <h1 class="titulo-item">Dream Cheese</h1>
-                <p class="descricao-item">Pão riviera, hamburger de costela, queijo cheddar, bacon, alface, tomate e creamcheese</p>
-                <h2 class="preco-item">R$23,90</h2>
-            </div>
-
-            <!-- Essa parte foi feita pelo gpeto, ela é aquela parte que mostra a quantidade de itens e dois botões um de + e o ou de - para pessoa diminuir ou aumentar a quantiade de itens -->
-            <div class="quantity-container">
-                <label class="texto-quantidade" for="quantity">Quantidade: </label>
-                <div class="input-container">
-                  <input type="number" id="quantity" min="1" value="1" oninput="updateQuantity()" />
-                  <button class="botao-quantidade" onclick="decrementQuantity()">-</button>
-                  <button class="botao-quantidade" onclick="incrementQuantity()">+</button>
+            <div class="item">
+                <!-- parte aonde contem a descrição do lanche e a imagem -->
+                <img src="_imagens/burger_1_resized.png" alt="" class="burger">
+                <div class="itens">
+                    <h1 class="titulo-item">Dream Cheese</h1>
+                    <p class="descricao-item">Pão riviera, hamburger de costela, queijo cheddar, bacon, alface, tomate e creamcheese</p>
+                    <h2 class="preco-item">R$23,90</h2>
                 </div>
-            </div>
-            <div id="message"></div>
 
-            <div id="message"></div>
+                <!-- Essa parte foi feita pelo gpeto, ela é aquela parte que mostra a quantidade de itens e dois botões um de + e o ou de - para pessoa diminuir ou aumentar a quantiade de itens -->
+                <div class="quantity-container">
+                    <label class="texto-quantidade" for="quantity">Quantidade: </label>
+                    <div class="input-container">
+                    <input type="number" id="quantity" min="1" value="1" oninput="updateQuantity()" />
+                    <button class="botao-quantidade" onclick="decrementQuantity()">-</button>
+                    <button class="botao-quantidade" onclick="incrementQuantity()">+</button>
+                    </div>
+                </div>
+                <div id="message"></div>
+
+                <div id="message"></div>
+            </div>
+            <div class="item">
+                <!-- parte aonde contem a descrição do lanche e a imagem -->
+                <img src="_imagens/burger_5_resized.png" alt="" class="burger">
+                <div class="itens">
+                    <h1 class="titulo-item">Kiero Burger</h1>
+                    <p class="descricao-item">Pão riviera, calabresa acebolada, queijo mussarela, vinagrete e maionese</p>
+                    <h2 class="preco-item">R$22,00</h2>
+                </div>
+
+                <!-- Essa parte foi feita pelo gpeto, ela é aquela parte que mostra a quantidade de itens e dois botões um de + e o ou de - para pessoa diminuir ou aumentar a quantiade de itens -->
+                <div class="quantity-container">
+                    <label class="texto-quantidade" for="quantity">Quantidade: </label>
+                    <div class="input-container">
+                    <input type="number" id="quantity" min="1" value="1" oninput="updateQuantity()" />
+                    <button class="botao-quantidade" onclick="decrementQuantity()">-</button>
+                    <button class="botao-quantidade" onclick="incrementQuantity()">+</button>
+                    </div>
+                </div>
+                <div id="message"></div>
+
+                <div id="message"></div>
+            </div>
+            <div class="item">
+                <!-- parte aonde contem a descrição do lanche e a imagem -->
+                <img src="_imagens/batatafrita_resized.png" alt="" class="burger">
+                <div class="itens">
+                    <h1 class="titulo-item">Batata Frita</h1>
+                    <p class="descricao-item">Porção de 500gr de Batata Frita</p>
+                    <h2 class="preco-item">R$19,90</h2>
+                </div>
+
+                <!-- Essa parte foi feita pelo gpeto, ela é aquela parte que mostra a quantidade de itens e dois botões um de + e o ou de - para pessoa diminuir ou aumentar a quantiade de itens -->
+                <div class="quantity-container">
+                    <label class="texto-quantidade" for="quantity">Quantidade: </label>
+                    <div class="input-container">
+                    <input type="number" id="quantity" min="1" value="1" oninput="updateQuantity()" />
+                    <button class="botao-quantidade" onclick="decrementQuantity()">-</button>
+                    <button class="botao-quantidade" onclick="incrementQuantity()">+</button>
+                    </div>
+                </div>
+                <div id="message"></div>
+
+                <div id="message"></div>
+            </div>
             <!-- Barrinha decorativa -->
             <div class="barra"></div>
 
             <p class="texto-tipo-pagamento">Selecione o meio de pagamento:</p>
-            <div>
                   <div class="tipos-pagamento">
                       <input type="radio" id="pix" name="meio-pagamento" value="pix">
                       <label for="pix" class="meios-pag">PIX</label><br>
@@ -69,11 +114,11 @@
                       <input type="radio" id="dinheiro" name="meio-pagamento" value="dinheiro">
                       <label for="dinheiro">Dinheiro</label><br>                
                   </div>
-            </div>
+
             <!-- Botões de compra -->
             <div class="botoes-compra">
                 <a href="index.html" class="botao-compra">Continuar Comprando</a>
-                <a href="tipo-pagamento.html" class="botao-compra">Finalizar Compra</a>
+                <a href="pedidos.html" class="botao-compra">Finalizar Compra</a>
             </div>
         </div>
 
